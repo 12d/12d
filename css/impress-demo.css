@@ -47,6 +47,7 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    font-family: "Microsoft YaHei",hei;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -250,14 +251,14 @@ a:focus {
     3D positioning along Z axis.
 */
 
-#title {
+.large-page {
     padding: 0;
 }
 
-#title .try {
+.large-page .try {
     font-size: 64px;
     position: absolute;
-    top: -0.5em;
+    top: -1em;
     left: 1.5em;
 
     -webkit-transform: translateZ(20px);
@@ -267,7 +268,7 @@ a:focus {
     transform:         translateZ(20px);
 }
 
-#title h1 {
+.large-page h1 {
     font-size: 190px;
 
     -webkit-transform: translateZ(50px);
@@ -277,7 +278,7 @@ a:focus {
     transform:         translateZ(50px);
 }
 
-#title .footnote {
+.large-page .footnote {
     font-size: 32px;
 }
 
@@ -575,7 +576,6 @@ a:focus {
         We hide the hint until presentation is started and from browsers not supporting
         impress.js, as they will have a linear scrollable view ...
     */
-    display: none;
 
     /*
         ... and give it some fixed position and nice styles.
@@ -701,3 +701,18 @@ a:focus {
     Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
     for you.
 */
+.title{border-bottom:1px #ccc dashed; padding-bottom:10px; color:gray; font-size:24px;margin-bottom: 10px}
+.content li{padding:10px;list-style-type:square; }
+.circle{
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    font-size:0.8em;
+    position:absolute;
+    padding:5px;
+    opacity:0.6
+}
+.slide blockquote{background:gray;color:white;border-radius:5px;padding:5px;margin:5px 0; font-family:monospace;}
+.border-box{border: 2px dashed yellow;position:absolute;display:none;}
+.border-box .tips{position:absolute; right:10px;top:50%;margin-top:-15px; color:yellow;font-size:20px;}
+.active .border-box{display:block}
