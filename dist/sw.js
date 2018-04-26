@@ -3,26 +3,29 @@ var __wpo = {
     "main": [
       "./static/images/dialog-downloadApp.f4999d8.jpg",
       "./static/js/app.js?086e3f1c324ef69effce",
-      "./static/js/vendor.js?bf3e3769e470e0006d8a",
+      "./static/js/vendor.js?7ed7247456b8b8ad438c",
       "./static/js/manifest.js?69227fa7a0263b4f01e0",
       "./static/css/app.css",
-      "./"
+      "./",
+      "https://bank-static.pingan.com.cn"
     ],
     "additional": [],
     "optional": []
   },
-  "externals": [],
+  "externals": [
+    "https://bank-static.pingan.com.cn"
+  ],
   "hashesMap": {
     "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "./static/images/dialog-downloadApp.f4999d8.jpg",
     "0a5630db0e277c804a02f90011193d91906501c9": "./static/js/app.js?086e3f1c324ef69effce",
-    "980599e9b98fad007a6a878635a995a281809a2a": "./static/js/vendor.js?bf3e3769e470e0006d8a",
+    "6534052e1eed32a4329cb1a552a53a255190c4bb": "./static/js/vendor.js?7ed7247456b8b8ad438c",
     "460f4946c829d43aea3d731b2fc2babb81ed4b71": "./static/js/manifest.js?69227fa7a0263b4f01e0",
     "852f1c3aaaff36e3dd70e9633a826b4fe3379daa": "./static/css/app.css",
-    "cbbbe65aa58d68bee8d76f80fa2880266382783d": "./"
+    "0baec0c404db18341fead2d538d8b98dd4b6fc68": "./"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-4-26 17:22:20",
+  "version": "2018-4-26 18:23:24",
   "name": "webpack-offline",
   "pluginVersion": "4.9.0",
   "relativePaths": false
