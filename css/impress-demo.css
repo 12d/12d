@@ -712,7 +712,19 @@ a:focus {
     padding:5px;
     opacity:0.6
 }
-.slide blockquote{background:gray;color:white;border-radius:5px;padding:5px;margin:5px 0; font-family:monospace;}
+.slide blockquote, .blockquote{background:gray;color:white;border-radius:5px;padding:5px;margin:5px 0; font-family:monospace;}
 .border-box{border: 2px dashed yellow;position:absolute;display:none;}
 .border-box .tips{position:absolute; right:10px;top:50%;margin-top:-15px; color:yellow;font-size:20px;}
 .active .border-box{display:block}
+.quote{
+    font-size: 450px;
+    transform: rotate(90deg);
+    display: block;
+    position: absolute;
+    left: 280px;
+    top: -120px;
+    font-family: serif;
+}
+.label-text{font-size:30px;line-height:50px;display:inline-block;text-align:center;}
+.label-text img{display:block;}
+.content dd{font-size: 20px;}

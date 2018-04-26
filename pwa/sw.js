@@ -9,7 +9,7 @@ this.addEventListener('install', function (event) {
         caches.open(CACHE_NAME).then(function (cache) {
             return cache.addAll([
                 './',
-                'getList',
+                './getList.json',
                 'img/avatar_v1.jpg',
                 'js/index_v2.js',
                 'js/jquery_v1.js'

@@ -1,15 +1,27 @@
+
 {
-  "name": "Minimal app to try PWA",
-  "short_name": "Minimal PWA",
-  "display": "standalone",
+  "dir": "ltr",
+  "lang": "en",
+  "name": "My App",
+  "display": "我的APP",
   "start_url": "index.html",
-  "theme_color": "#8888ff",
-  "background_color": "#aaaaff",
-  "icons": [
-    {
-      "src": "res/icon.png",
-      "sizes": "256x256",
-      "type": "image/png"
-    }
-  ]
+  "short_name": "D.D Blog",
+  "theme_color": "transparent",
+  "description": "Share More, Gain More. - D.D Blog",
+  "orientation": "any",
+  "background_color": "transparent",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [{
+    "src": "res/icon.png",
+    "sizes": "32x32",
+    "type": "image/png"
+  }, {
+    "src": "res/icon.png",
+    "sizes": "48x48",
+    "type": "image/png"
+  }
+  ],
+  "gcm_sender_id": "...",
+  "applicationServerKey": "..."
 }

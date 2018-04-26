@@ -2,19 +2,22 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=1024"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by
+        Bartek Szopka @bartaz</title>
 
-    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
-    <meta name="author" content="Bartek Szopka" />
+    <meta name="description"
+          content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com."/>
+    <meta name="author" content="Bartek Szopka"/>
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
-    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic"
+          rel="stylesheet"/>
+    <link href="css/impress-demo.css" rel="stylesheet"/>
 
-    <link rel="shortcut icon" href="favicon.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="shortcut icon" href="favicon.png"/>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
 </head>
 
 <!--
@@ -41,7 +44,9 @@
     For example this fallback message is only visible when there is `impress-not-supported` class on body.
 -->
 <div class="fallback-message">
-    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified
+        version of this presentation.</p>
+
     <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
 </div>
 
@@ -92,19 +97,27 @@
         <p class="circle" style="width:300px;height:300px;line-height:300px;background:red;left:270px;top:-50px;">
             Javascript
         </p>
-        <p class="circle" style="color:white;width:200px;height:200px;line-height:200px;background:blue;left:500px;top:-150px;">
+
+        <p class="circle"
+           style="color:white;width:200px;height:200px;line-height:200px;background:blue;left:500px;top:-150px;">
             HTML
         </p>
+
         <p class="circle" style="width:200px;height:200px;line-height:200px;background:green;left:470px;top:140px;">
             React
         </p>
+
         <p class="circle" style="width:200px;height:200px;line-height:200px;background:yellow;left:120px;top:-100px;">
             CSS
         </p>
-        <p class="circle" style="font-size:12px;color:white;width:100px;height:100px;line-height:100px;background:brown;left:180px;top:210px;" >
+
+        <p class="circle"
+           style="font-size:12px;color:white;width:100px;height:100px;line-height:100px;background:brown;left:180px;top:210px;">
             NODE/NPM
         </p>
-        <p class="circle" style="font-size:12px;color:white;width:100px;height:100px;line-height:100px;background:purple;left:420px;top:-180px;">
+
+        <p class="circle"
+           style="font-size:12px;color:white;width:100px;height:100px;line-height:100px;background:purple;left:420px;top:-180px;">
             OC/Swift/Java等
         </p>
     </div>
@@ -115,8 +128,12 @@
             <li> xcode > 7.0</li>
             <li> ios > 7.0</li>
             <li> node 用4.2.6 LTS版本，千万别用5.2.6 stable</li>
-            <li> 安装：<blockquote>npm install -g react-native-cli</blockquote></li>
-            <li> 创建项目: <blockquote>react-native init ProjectName</blockquote></li>
+            <li> 安装：
+                <blockquote>npm install -g react-native-cli</blockquote>
+            </li>
+            <li> 创建项目:
+                <blockquote>react-native init ProjectName</blockquote>
+            </li>
             <li> 启动项目</li>
         </ul>
     </div>
@@ -144,17 +161,198 @@
             <p class="tips" style="margin-top:-50px;">注册组件</p>
         </div>
     </div>
-    <div class="step slide" data-x="0" data-y="-12000" data-scale="3">
-        <h2 class="title">Ready to ReactNative</h2>
+    <div class="step" data-x="0" data-y="-12000" data-scale="1">
+        <div style="transform:translateY(-200px)">
+            <h1>启动APP = 编译代码 + 启动虚拟机</h1>
+            <span class="quote">{</span>
+
+            <div style="position:absolute;left:110px;top:350px;" class="label-text">生成ipa外壳<img height="50"
+                                                                                                src="http://ico.ooopic.com/ajax/iconpng/?id=88049.png"/>
+            </div>
+            <div style="position:absolute;right:190px;top:350px;" class="label-text">生成jsbundle<img height="50"
+                                                                                                    src="http://nodejs.cn/static/images/logo.svg"/>
+            </div>
+        </div>
+    </div>
+    <div class="step slide" data-x="0" data-y="-14000" data-scale="1">
+        <h2 class="title">Key Points</h2>
         <ul class="content">
-            <li> MAC OS X</li>
-            <li> xcode > 7.0</li>
-            <li> ios > 7.0</li>
-            <li> node 用4.2.6 LTS版本，千万别用5.2.6 stable</li>
-            <li> 安装：<blockquote>npm install -g react-native-cli</blockquote></li>
-            <li> 创建项目: <blockquote>react-native init ProjectName</blockquote></li>
-            <li> 启动项目</li>
+            <li> 采用ES2015版本JS语法</li>
+            <li> JSX: 是一个看起来很像 XML 的 JavaScript 语法扩展，class,for等保留字不能使用</li>
+            <li> app id和包名保持统一</li>
+            <li> xcode首次启动需要</li>
+            <li> 编译jsbundle服务启动
+                <blockquote style="display:inline-block; margin-left:20px;">npm start启动</blockquote>
+            </li>
+            <li> jsbundle文件名修改，以路径修改</li>
         </ul>
+    </div>
+    <div class="step" data-x="0" data-y="-16000" data-scale="1">
+        <div>
+            <center>@_@ 样式表</center>
+        </div>
+    </div>
+    <div class="step slide" data-x="0" data-y="-18000" data-scale="1">
+        <h2 class="title">样式表常用</h2>
+        <ul class="content">
+            <li>创建样式表
+                <blockquote>StyleSheet.create({color:"red"})</blockquote>
+            </li>
+            <li>内联样式</li>
+            <li>外联样式</li>
+            <li>组合样式</li>
+            <li>样式驼峰命名</li>
+        </ul>
+    </div>
+    <div class="step slide" data-x="0" data-y="-18000" data-scale="5">
+        <h2 class="title">样式表支持现状</h2>
+        <ul class="content">
+            <li><a target="_blank" href="http://facebook.github.io/react-native/docs/view.html#style" target="">View Properties</a></li>
+            <li><a target="_blank" href="http://facebook.github.io/react-native/docs/image.html#style" target="">Image Properties</a></li>
+            <li><a target="_blank" href="http://facebook.github.io/react-native/docs/text.html#style" target="">Text Properties</a></li>
+            <li><a target="_blank" href="http://facebook.github.io/react-native/docs/flexbox.html#content" target="">Flex Properties</a></li>
+            <li><a target="_blank" target=_blank"href="http://facebook.github.io/react-native/docs/transforms.html#content" target="">Transform Properties</a></li>
+        </ul>
+    </div>
+    <div class="step" data-x="0" data-y="-20000" data-scale="1">
+        <div>
+            <center>事件响应</center>
+        </div>
+    </div>
+    <div class="step slide" data-x="0" data-y="-22000" data-scale="1">
+        <h2 class="title"></h2>
+        <ul class="content">
+            <li>RN元素，非DOM，所以DOM Event都无法使用</li>
+            <li>通过属性名绑定，例如onPress</li>
+            <li>Gesture Responder System<sup>*</sup></li>
+            <li>TouchableHighlight<sup>*</sup></li>
+            <li>Touchable<sup>*</sup></li>
+            <li>Responder Lifecycle<sup>*</sup></li>
+        </ul>
+    </div>
+    <div class="step" data-x="0" data-y="-24000" data-scale="1">
+        <div>
+            <center>路由配置</center>
+        </div>
+    </div>
+    <div class="step slide" data-x="0" data-y="-26000" data-scale="1">
+        <h2 class="title">Router</h2>
+        <ul class="content">
+            <li>Navigator</li>
+            <li>分场景</li>
+            <li>页面切换/回退/跳转</li>
+            <li>
+                <dt>转场动画</dt>
+                <dd>FadeAndroid</dd>
+                <dd>FloatFromBottom</dd>
+                <dd>FloatFromBottomAndroid</dd>
+                <dd>FloatFromLeft</dd>
+                <dd>FloatFromRight</dd>
+                <dd>HorizontalSwipeJump</dd>
+                <dd>HorizontalSwipeJumpFromRight</dd>
+                <dd>PushFromRight</dd>
+                <dd>VerticalDownSwipeJump</dd>
+                <dd>VerticalUpSwipeJump</dd>
+            </li>
+        </ul>
+    </div>
+    <div class="step" data-x="0" data-y="-28000" data-scale="1">
+        <div>
+            <center>数据请求</center>
+        </div>
+    </div>
+    <div class="step slide" data-x="0" data-y="-30000" data-scale="1">
+        <h2 class="title">Data Request</h2>
+        <ul class="content">
+            <li>fetch(url&lt;String&gt;, options&lt;Object&gt;)</li>
+            <li>
+                <dt>options配置</dt>
+                <dd>method: POST | GET</dd>
+                <dd>headers</dd>
+                <dd>body</dd>
+            </li>
+            <li>
+                示例
+            </li>
+        </ul>
+        <img src="images/fetch.png"/>
+    </div>
+    <div class="step slide" data-x="0" data-y="-32000" data-scale="1">
+        <h2 class="title">Data Request</h2>
+        <ul class="content">
+            <li>
+                <dt>XMLHttpRequest</dt>
+                <dd>open(method, url)</dd>
+                <dd>setRequestHeader(headerKey, headerValue)</dd>
+                <dd>send(queryData)</dd>
+                <dd>
+                    <blockquote style="display: inline-block">@event</blockquote>
+                    onreadystatechange
+                </dd>
+            </li>
+            <li>
+                示例
+            </li>
+        </ul>
+        <img src="images/ajax.png"/>
+    </div>
+    <div class="step" data-x="0" data-y="-34000" data-scale="1">
+        <div>
+            <center>数据请求</center>
+        </div>
+    </div>
+    <div class="step slide" data-x="0" data-y="-36000" data-scale="1">
+        <h2 class="title">Data Request</h2>
+        <ul class="content">
+            <li>fetch(url&lt;String&gt;, options&lt;Object&gt;)</li>
+            <li>
+                <dt>options配置</dt>
+                <dd>method: POST | GET</dd>
+                <dd>headers</dd>
+                <dd>body</dd>
+            </li>
+            <li>
+                示例
+            </li>
+        </ul>
+        <img src="images/fetch.png"/>
+    </div>
+    <div class="step" data-x="0" data-y="-38000" data-scale="1">
+        <div>
+            <center>本地存储</center>
+        </div>
+    </div>
+    <div class="step slide" data-x="0" data-y="-40000" data-scale="1">
+        <h2 class="title">AsyncStorage</h2>
+        <ul class="content">
+            <li>替代H5的localStorage</li>
+            <li>异步接口，每个接口返回一个Promise对象</li>
+            <li>
+                <dt>常用接口</dt>
+                <dd>getItem(key)</dd>
+                <dd>setItem(key, value)</dd>
+                <dd>removeItem(key)</dd>
+                <dd>clear()</dd>
+                <dd>其他（参考文档）</dd>
+            </li>
+            <li>
+                示例
+            </li>
+        </ul>
+    </div>
+    <div class="step" data-x="0" data-y="-42000" data-scale="1">
+        <div>
+            <center>自定义组件</center>
+            <br/>
+            <center><blockquote class="blockquote" style="font-size: 20px;">&ltHelloWorld author="陈旭伟"/&gt</blockquote></center>
+        </div>
+    </div>
+
+    <div class="step" data-x="0" data-y="-44000" data-scale="40">
+        <center>
+            <h1>TO BE CONTINUE…</h1>
+            <h2 class="title">by 陈旭伟</h2>
+        </center>
     </div>
 </div>
 <script>
@@ -168,5 +366,4 @@
 
 </body>
 </html>
-
 
