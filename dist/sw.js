@@ -1,12 +1,12 @@
 var __wpo = {
   "assets": {
     "main": [
-      "/static/images/dialog-downloadApp.f4999d8.jpg",
-      "/static/js/app.js?086e3f1c324ef69effce",
-      "/static/js/vendor.js?1bee3f615d88e8df35f6",
-      "/static/js/manifest.js?5f3f28447a6983a3517a",
-      "/static/css/app.css",
-      "/",
+      "./static/images/dialog-downloadApp.f4999d8.jpg",
+      "./static/js/app.js?086e3f1c324ef69effce",
+      "./static/js/vendor.js?7ed7247456b8b8ad438c",
+      "./static/js/manifest.js?69227fa7a0263b4f01e0",
+      "./static/css/app.css",
+      "./",
       "https://bank-static.pingan.com.cn/"
     ],
     "additional": [],
@@ -16,16 +16,16 @@ var __wpo = {
     "https://bank-static.pingan.com.cn/"
   ],
   "hashesMap": {
-    "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "/static/images/dialog-downloadApp.f4999d8.jpg",
-    "0a5630db0e277c804a02f90011193d91906501c9": "/static/js/app.js?086e3f1c324ef69effce",
-    "2af7a7489bfd7359ca71d7b7c89a0de785db131a": "/static/js/vendor.js?1bee3f615d88e8df35f6",
-    "52f6686ddfa8a8d89f384d69974fbb5e2ba81a28": "/static/js/manifest.js?5f3f28447a6983a3517a",
-    "3292b6f0848e4ebd350f24111046a75c70d7660e": "/static/css/app.css",
-    "3a2f09182233bdf932191014c74b436e22bce6e0": "/"
+    "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "./static/images/dialog-downloadApp.f4999d8.jpg",
+    "0a5630db0e277c804a02f90011193d91906501c9": "./static/js/app.js?086e3f1c324ef69effce",
+    "6534052e1eed32a4329cb1a552a53a255190c4bb": "./static/js/vendor.js?7ed7247456b8b8ad438c",
+    "460f4946c829d43aea3d731b2fc2babb81ed4b71": "./static/js/manifest.js?69227fa7a0263b4f01e0",
+    "852f1c3aaaff36e3dd70e9633a826b4fe3379daa": "./static/css/app.css",
+    "0baec0c404db18341fead2d538d8b98dd4b6fc68": "./"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-4-26 18:35:13",
+  "version": "2018-4-26 18:40:22",
   "name": "webpack-offline",
   "pluginVersion": "4.9.0",
   "relativePaths": false
@@ -90,7 +90,7 @@ var __wpo = {
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "./";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = "MRag");
