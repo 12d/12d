@@ -2,7 +2,7 @@ var __wpo = {
   "assets": {
     "main": [
       "./static/images/dialog-downloadApp.f4999d8.jpg",
-      "./static/js/app.0c28ad691829bd8a313d.js",
+      "./static/js/app.989003edf7c41fcd64bb.js",
       "./static/js/vendor.ce1ad217c571b938c4c3.js",
       "./static/js/manifest.3ad1d5771e9b13dbdad2.js",
       "./static/css/app.css",
@@ -14,15 +14,15 @@ var __wpo = {
   "externals": [],
   "hashesMap": {
     "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "./static/images/dialog-downloadApp.f4999d8.jpg",
-    "ea71982172db9654c2640c2f0695f485ce372a0e": "./static/js/app.0c28ad691829bd8a313d.js",
+    "e1f87609fed6a17f9c4879b138ba1b58f720b343": "./static/js/app.989003edf7c41fcd64bb.js",
     "4a428138e78b340a5ebdc561a63742e30c6fe49e": "./static/js/vendor.ce1ad217c571b938c4c3.js",
     "460f4946c829d43aea3d731b2fc2babb81ed4b71": "./static/js/manifest.3ad1d5771e9b13dbdad2.js",
     "852f1c3aaaff36e3dd70e9633a826b4fe3379daa": "./static/css/app.css",
-    "740c1e2f266dfe6d99dc70404e9c1961b01625d8": "./"
+    "b8b9357b914f850f80efcff9543736d21d147e37": "./"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-4-27 18:11:12",
+  "version": "2018-4-27 18:25:25",
   "name": "webpack-offline",
   "pluginVersion": "4.9.0",
   "relativePaths": false
