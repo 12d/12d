@@ -7,6 +7,7 @@ var __wpo = {
       "/static/js/manifest.js?69227fa7a0263b4f01e0",
       "/static/css/app.css",
       "/",
+      "https://bank-static.pingan.com.cn/*",
       "https://bank-static.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
       "https://bank-static.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
       "https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",
@@ -17,6 +18,7 @@ var __wpo = {
     "optional": []
   },
   "externals": [
+    "https://bank-static.pingan.com.cn/*",
     "https://bank-static.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
     "https://bank-static.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
     "https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",
@@ -33,14 +35,10 @@ var __wpo = {
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-4-27 14:38:59",
+  "version": "2018-4-27 14:44:04",
   "name": "webpack-offline",
   "pluginVersion": "4.9.0",
-  "relativePaths": false,
-  "prefetchRequest": {
-    "credentials": "same-origin",
-    "mode": "cors"
-  }
+  "relativePaths": false
 };
 
 /******/ (function(modules) { // webpackBootstrap
