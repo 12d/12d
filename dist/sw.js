@@ -1,6 +1,7 @@
 var __wpo = {
   "assets": {
     "main": [
+      "./index.html",
       "./static/images/dialog-downloadApp.f4999d8.jpg",
       "./static/js/app.js?0c28ad691829bd8a313d",
       "./static/js/vendor.js?ce1ad217c571b938c4c3",
