@@ -1,32 +1,47 @@
 var __wpo = {
   "assets": {
     "main": [
-      "./static/images/dialog-downloadApp.f4999d8.jpg",
-      "./static/js/app.js?0c28ad691829bd8a313d",
-      "./static/js/vendor.js?ce1ad217c571b938c4c3",
-      "./static/js/manifest.js?69227fa7a0263b4f01e0",
-      "./static/css/app.css",
-      "./",
+      "/static/images/dialog-downloadApp.f4999d8.jpg",
+      "/static/js/app.js?0c28ad691829bd8a313d",
+      "/static/js/vendor.js?c9354f94eeb2e7dc1ac9",
+      "/static/js/manifest.js?69227fa7a0263b4f01e0",
+      "/static/css/app.css",
+      "/",
+      "https://bank-static.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
+      "https://bank-static.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
+      "https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",
+      "https://bank-static.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
+      "https://bank-static.pingan.com.cn/omm/mobile/assets/plugins/product.js"
     ],
     "additional": [],
     "optional": []
   },
   "externals": [
+    "https://bank-static.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
+    "https://bank-static.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
+    "https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",
+    "https://bank-static.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
+    "https://bank-static.pingan.com.cn/omm/mobile/assets/plugins/product.js"
   ],
   "hashesMap": {
-    "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "./static/images/dialog-downloadApp.f4999d8.jpg",
-    "ea71982172db9654c2640c2f0695f485ce372a0e": "./static/js/app.js?0c28ad691829bd8a313d",
-    "4a428138e78b340a5ebdc561a63742e30c6fe49e": "./static/js/vendor.js?ce1ad217c571b938c4c3",
-    "460f4946c829d43aea3d731b2fc2babb81ed4b71": "./static/js/manifest.js?69227fa7a0263b4f01e0",
-    "852f1c3aaaff36e3dd70e9633a826b4fe3379daa": "./static/css/app.css",
-    "79f3c92165d24378644bca65082f4756dc95197d": "./"
+    "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "/static/images/dialog-downloadApp.f4999d8.jpg",
+    "ea71982172db9654c2640c2f0695f485ce372a0e": "/static/js/app.js?0c28ad691829bd8a313d",
+    "83af1129df1b222426be63f6e850d4205631e25f": "/static/js/vendor.js?c9354f94eeb2e7dc1ac9",
+    "460f4946c829d43aea3d731b2fc2babb81ed4b71": "/static/js/manifest.js?69227fa7a0263b4f01e0",
+    "852f1c3aaaff36e3dd70e9633a826b4fe3379daa": "/static/css/app.css",
+    "96cde9a59f8f8f4020429c983293aba631bada88": "/"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-4-27 11:35:33",
+  "version": "2018-4-27 14:15:29",
   "name": "webpack-offline",
   "pluginVersion": "4.9.0",
-  "relativePaths": false
+  "relativePaths": false,
+  "prefetchRequest": {
+    "credentials": "cors",
+    "headers": "Service-Worker-Allowed",
+    "mode": "cors"
+  }
 };
 
 /******/ (function(modules) { // webpackBootstrap
