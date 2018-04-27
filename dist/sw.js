@@ -1,7 +1,6 @@
 var __wpo = {
   "assets": {
     "main": [
-      "./index.html",
       "./static/images/dialog-downloadApp.f4999d8.jpg",
       "./static/js/app.js?0c28ad691829bd8a313d",
       "./static/js/vendor.js?ce1ad217c571b938c4c3",
@@ -23,7 +22,7 @@ var __wpo = {
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-4-27 10:16:46",
+  "version": "2018-4-27 10:38:14",
   "name": "webpack-offline",
   "pluginVersion": "4.9.0",
   "relativePaths": false
