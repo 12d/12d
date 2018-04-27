@@ -33,12 +33,12 @@ var __wpo = {
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-4-27 14:55:45",
+  "version": "2018-4-27 15:19:39",
   "name": "webpack-offline",
   "pluginVersion": "4.9.0",
   "relativePaths": false,
   "prefetchRequest": {
-    "credentials": "omit",
+    "credentials": "include",
     "mode": "no-cors"
   }
 };
