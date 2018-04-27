@@ -12,8 +12,7 @@ this.addEventListener('install', function (event) {
                 './getList.json',
                 'img/avatar_v1.jpg',
                 'js/index_v2.js',
-                'js/jquery_v1.js',
-                '"https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",'
+                'js/jquery_v1.js'
             ]);
         })
     )
