@@ -38,7 +38,7 @@ var __wpo = {
   "pluginVersion": "4.9.0",
   "relativePaths": false,
   "prefetchRequest": {
-    "credentials": "include",
+    "credentials": "same-origin",
     "mode": "no-cors"
   }
 };
