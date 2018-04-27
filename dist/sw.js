@@ -39,7 +39,7 @@ var __wpo = {
   "relativePaths": false,
   "prefetchRequest": {
     "credentials": "omit",
-    "headers": "cros",
+    "headers": "cors",
     "mode": "cors"
   }
 };
