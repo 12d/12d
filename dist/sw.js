@@ -6,12 +6,23 @@ var __wpo = {
       "./static/js/vendor.js?ce1ad217c571b938c4c3",
       "./static/js/manifest.js?69227fa7a0263b4f01e0",
       "./static/css/app.css",
-      "./"
+      "./",
+      "https://bank-static.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
+      "https://bank-static.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
+      "https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",
+      "https://bank-static.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
+      "https://bank-static.pingan.com.cn/omm/mobile/assets/plugins/product.js"
     ],
     "additional": [],
     "optional": []
   },
-  "externals": [],
+  "externals": [
+    "https://bank-static.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
+    "https://bank-static.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
+    "https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",
+    "https://bank-static.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
+    "https://bank-static.pingan.com.cn/omm/mobile/assets/plugins/product.js"
+  ],
   "hashesMap": {
     "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "./static/images/dialog-downloadApp.f4999d8.jpg",
     "ea71982172db9654c2640c2f0695f485ce372a0e": "./static/js/app.js?0c28ad691829bd8a313d",
@@ -22,7 +33,7 @@ var __wpo = {
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-4-27 10:38:14",
+  "version": "2018-4-27 10:55:24",
   "name": "webpack-offline",
   "pluginVersion": "4.9.0",
   "relativePaths": false
