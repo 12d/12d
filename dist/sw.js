@@ -35,10 +35,14 @@ var __wpo = {
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-4-27 14:47:41",
+  "version": "2018-4-27 14:53:36",
   "name": "webpack-offline",
   "pluginVersion": "4.9.0",
-  "relativePaths": false
+  "relativePaths": false,
+  "prefetchRequest": {
+    "credentials": "omit",
+    "mode": "no-cors"
+  }
 };
 
 /******/ (function(modules) { // webpackBootstrap
