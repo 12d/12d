@@ -1,47 +1,33 @@
 var __wpo = {
   "assets": {
     "main": [
-      "./index.html",
       "./static/images/dialog-downloadApp.f4999d8.jpg",
       "./static/js/app.989003edf7c41fcd64bb.js",
       "./static/js/vendor.b8fb59f36f0387abab1a.js",
       "./static/js/manifest.3ad1d5771e9b13dbdad2.js",
       "./static/css/app.css",
       "./",
-      "https://bank-static.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
-      "https://bank-static.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
-      "https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",
-      "https://bank-static.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
-      "https://bank-static.pingan.com.cn/omm/mobile/assets/plugins/product.js"
+      "./static/sw-entry.js"
     ],
     "additional": [],
     "optional": []
   },
-  "externals": [
-    "https://bank-static.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
-    "https://bank-static.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
-    "https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",
-    "https://bank-static.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
-    "https://bank-static.pingan.com.cn/omm/mobile/assets/plugins/product.js"
-  ],
+  "externals": [],
   "hashesMap": {
     "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "./static/images/dialog-downloadApp.f4999d8.jpg",
     "e1f87609fed6a17f9c4879b138ba1b58f720b343": "./static/js/app.989003edf7c41fcd64bb.js",
     "fdeae6f3c0c3a6e36d6ea2da8b77fcdcaa376b2f": "./static/js/vendor.b8fb59f36f0387abab1a.js",
     "460f4946c829d43aea3d731b2fc2babb81ed4b71": "./static/js/manifest.3ad1d5771e9b13dbdad2.js",
     "852f1c3aaaff36e3dd70e9633a826b4fe3379daa": "./static/css/app.css",
-    "79af8d53c5d4644ad7441bdd80dc4eced2302544": "./"
+    "79af8d53c5d4644ad7441bdd80dc4eced2302544": "./",
+    "6c8dff65a5c40dd305946eed7ad485470146348f": "./static/sw-entry.js"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
   "version": null,
   "name": "webpack-offline",
   "pluginVersion": "4.9.0",
-  "relativePaths": false,
-  "prefetchRequest": {
-    "credentials": "omit",
-    "mode": "cors"
-  }
+  "relativePaths": false
 };
 
 /******/ (function(modules) { // webpackBootstrap
@@ -106,19 +92,102 @@ var __wpo = {
 /******/ 	__webpack_require__.p = "./";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "MRag");
+/******/ 	return __webpack_require__(__webpack_require__.s = "fTtR");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "5NEa":
+/***/ "0teS":
 /***/ (function(module, exports) {
 
-
+self.addEventListener('fetch', function (event) {
+    function cachesMatch (request, cacheName) {
+      return caches.match(request, {
+        cacheName: cacheName
+      }).then(function (response) {
+        return response
+      })
+      // Return void if error happened (cache not found)
+      ['catch'](function () {})
+    }
+    function cacheFirst(cacheUrl, CACHE_NAME) {
+      var resource = cachesMatch(cacheUrl, CACHE_NAME).then(function (response) {
+        if (response) {
+          return response;
+        }
+        // Load and cache known assets
+        var fetching = fetch(urlString).then(function (response) {
+          if (!response.ok) {
+            return response;
+          }
+          (function () {
+            var responseClone = response.clone();
+            var storing = caches.open(CACHE_NAME).then(function (cache) {
+              return cache.put(urlString, responseClone);
+            }).then(function () {
+              console.log('[SW]:', 'Cache asset: ' + urlString);
+            });
+            event.waitUntil(storing);
+          })();
+  
+          return response;
+        });
+  
+        return fetching;
+      })
+      return resource
+    }
+    function netWorkFirst(cacheUrl, CACHE_NAME) {
+      var resource = fetch(cacheUrl).then(response => {
+        if (response.ok) {
+          var responseClone = response.clone()
+          var storing = caches.open(CACHE_NAME).then(function (cache) {
+            cache.put(cacheUrl, responseClone);
+          }).then(function () {
+            console.log('[SW]:', 'Cache asset: ' + cacheUrl);
+          });
+          event.waitUntil(storing);
+          return response;
+        }
+        // Throw to reach the code in the catch below
+        throw new Error('Response is not ok');
+      })
+      ['catch'](function () {
+        return cachesMatch(cacheUrl, CACHE_NAME);
+      });
+      return resource
+    }
+  
+    var url = new URL(event.request.url)
+    url.hash = ''
+    var pathname = url.pathname
+    var urlString = url.toString()
+    var cacheUrl = urlString
+    var IS_12D = /12d\.github\.io\/dist/
+    var IS_STATIC = /\/static\//
+   //var IS_HOME = /^\/(e|u|n)\/(\d+)$/
+    var IS_INDEX = /^\/index(?!\.)/
+    //var IS_PREVIEW = /^\/preview(?!\.)/
+    var CACHE_PREFIX = __wpo.name
+    var CACHE_TAG = __wpo.version
+    var CACHE_NAME = CACHE_PREFIX + ':' + CACHE_TAG
+    var resource = undefined
+    var isGET = event.request.method === 'GET'
+    // 以缓存优先的形式缓存 kano 以及 static/* 静态资源
+    if ((cacheUrl.match(IS_12D) || pathname.match(IS_STATIC)) && isGET) {
+      resource = cacheFirst(cacheUrl, CACHE_NAME)
+      event.respondWith(resource)
+    }
+    // 以网络优先的形式缓存 editor页面 preview页面和 production页面
+    if ((pathname.match(IS_INDEX)) && isGET) {
+      resource = netWorkFirst(cacheUrl, CACHE_NAME)
+      event.respondWith(resource)
+    }
+  })
 
 /***/ }),
 
-/***/ "MRag":
+/***/ "fTtR":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -941,7 +1010,7 @@ loaders: {},
 cacheMaps: [],
 navigationPreload: false,
 });
-        module.exports = __webpack_require__("5NEa")
+        module.exports = __webpack_require__("0teS")
       
 
 /***/ })
