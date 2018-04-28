@@ -1,25 +1,35 @@
 var __wpo = {
   "assets": {
     "main": [
-      "./index.html",
       "./static/images/dialog-downloadApp.f4999d8.jpg",
       "./static/js/app.989003edf7c41fcd64bb.js",
-      "./static/js/vendor.ce1ad217c571b938c4c3.js",
+      "./static/js/vendor.b8fb59f36f0387abab1a.js",
       "./static/js/manifest.3ad1d5771e9b13dbdad2.js",
       "./static/css/app.css",
-      "./"
+      "./",
+      "https://bank-static.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
+      "https://bank-static.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
+      "https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",
+      "https://bank-static.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
+      "https://bank-static.pingan.com.cn/omm/mobile/assets/plugins/product.js"
     ],
     "additional": [],
     "optional": []
   },
-  "externals": [],
+  "externals": [
+    "https://bank-static.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
+    "https://bank-static.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
+    "https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",
+    "https://bank-static.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
+    "https://bank-static.pingan.com.cn/omm/mobile/assets/plugins/product.js"
+  ],
   "hashesMap": {
     "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "./static/images/dialog-downloadApp.f4999d8.jpg",
     "e1f87609fed6a17f9c4879b138ba1b58f720b343": "./static/js/app.989003edf7c41fcd64bb.js",
-    "4a428138e78b340a5ebdc561a63742e30c6fe49e": "./static/js/vendor.ce1ad217c571b938c4c3.js",
+    "fdeae6f3c0c3a6e36d6ea2da8b77fcdcaa376b2f": "./static/js/vendor.b8fb59f36f0387abab1a.js",
     "460f4946c829d43aea3d731b2fc2babb81ed4b71": "./static/js/manifest.3ad1d5771e9b13dbdad2.js",
     "852f1c3aaaff36e3dd70e9633a826b4fe3379daa": "./static/css/app.css",
-    "b8b9357b914f850f80efcff9543736d21d147e37": "./"
+    "79af8d53c5d4644ad7441bdd80dc4eced2302544": "./"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
