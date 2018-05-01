@@ -62,7 +62,7 @@ self.addEventListener('fetch', function (event) {
     var urlString = url.toString()
     var cacheUrl = urlString
     var IS_12D = /12d\.github\.io\/dist/
-    var IS_STATIC = /\/static\//
+    var IS_STATIC = /\/dist\//
    //var IS_HOME = /^\/(e|u|n)\/(\d+)$/
     var IS_INDEX = /^\/index(?!\.)/
     //var IS_PREVIEW = /^\/preview(?!\.)/
