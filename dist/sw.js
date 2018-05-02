@@ -169,7 +169,7 @@ self.addEventListener('fetch', function (event) {
     var IS_INDEX = /\/dist\/index./
     //var IS_PREVIEW = /^\/preview(?!\.)/
     var CACHE_PREFIX = __wpo.name
-    var CACHE_TAG = __wpo.version
+    var CACHE_TAG = __wpo.pluginVersion
     var CACHE_NAME = CACHE_PREFIX + ':' + CACHE_TAG
     var resource = undefined
     var isGET = event.request.method === 'GET'
