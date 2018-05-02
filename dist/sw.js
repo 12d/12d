@@ -20,7 +20,7 @@ var __wpo = {
     "460f4946c829d43aea3d731b2fc2babb81ed4b71": "./static/js/manifest.3ad1d5771e9b13dbdad2.js",
     "852f1c3aaaff36e3dd70e9633a826b4fe3379daa": "./static/css/app.css",
     "1b73adf060891ff1ea1118b0033e28558522b1c7": "./",
-    "ff9a8e2bd53683a572cfac2cc462783ac6d9e543": "./static/sw-entry.js"
+    "5a5421a2c1051a265c3a7f95898378b09bbf15ad": "./static/sw-entry.js"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
@@ -166,7 +166,7 @@ self.addEventListener('fetch', function (event) {
     var IS_12D = /12d\.github\.io/
     var IS_STATIC = /\/static\//
    //var IS_HOME = /^\/(e|u|n)\/(\d+)$/
-    var IS_INDEX = /^\/index(?!\.)/
+    var IS_INDEX = /\/dist\/index./
     //var IS_PREVIEW = /^\/preview(?!\.)/
     var CACHE_PREFIX = __wpo.name
     var CACHE_TAG = __wpo.version
