@@ -20,11 +20,11 @@ var __wpo = {
     "460f4946c829d43aea3d731b2fc2babb81ed4b71": "./static/js/manifest.3ad1d5771e9b13dbdad2.js",
     "852f1c3aaaff36e3dd70e9633a826b4fe3379daa": "./static/css/app.css",
     "1b73adf060891ff1ea1118b0033e28558522b1c7": "./",
-    "5a5421a2c1051a265c3a7f95898378b09bbf15ad": "./static/sw-entry.js"
+    "dc3e3245bd6a5dc4f5eed08a33b1454e856c2645": "./static/sw-entry.js"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-5-2 14:15:53",
+  "version": "2018-5-2 14:52:48",
   "name": "webpack-offline",
   "pluginVersion": "4.9.0",
   "relativePaths": false
@@ -173,12 +173,12 @@ self.addEventListener('fetch', function (event) {
     var CACHE_NAME = CACHE_PREFIX + ':' + CACHE_TAG
     var resource = undefined
     var isGET = event.request.method === 'GET'
-    // 以缓存优先的形式缓存 kano 以及 static/* 静态资源
-    if ((cacheUrl.match(IS_12D) || pathname.match(IS_STATIC)) && isGET) {
+    // 以缓存优先的形式缓存 static/* 静态资源
+    if ((pathname.match(IS_STATIC)) && isGET) {
       resource = cacheFirst(cacheUrl, CACHE_NAME)
       event.respondWith(resource)
     }
-    // 以网络优先的形式缓存 editor页面 preview页面和 production页面
+    // 以网络优先的形式缓存 index页面
     if ((pathname.match(IS_INDEX)) && isGET) {
       resource = netWorkFirst(cacheUrl, CACHE_NAME)
       event.respondWith(resource)
