@@ -91,10 +91,10 @@ self.addEventListener('fetch', function (event) {
     var resource = undefined
     var isGET = event.request.method === 'GET'
     // 以缓存优先的形式缓存 static/* 静态资源
-    if ((pathname.match(IS_STATIC)) && isGET) {
-      resource = cacheFirst(cacheUrl, CACHE_NAME)
-      event.respondWith(resource)
-    }
+    // if ((pathname.match(IS_STATIC)) && isGET) {
+    //   resource = cacheFirst(cacheUrl, CACHE_NAME)
+    //   event.respondWith(resource)
+    // }
     // 以网络优先的形式缓存 index页面
     if ((pathname.match(IS_INDEX)) && isGET) {
       resource = netWorkFirst(cacheUrl, CACHE_NAME)
