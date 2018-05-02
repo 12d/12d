@@ -1,3 +1,22 @@
+
+self.addEventListener('activate', function(event) {
+
+  const CACHE_NAME = __wpo.name + ':' + __wpo.version
+
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.map(function(cacheName) {
+          if (CACHE_NAME.indexOf(cacheName) === -1) {
+            console.info('SW: deleting ' + cacheName);
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
+});
+
 self.addEventListener('fetch', function (event) {
     function cachesMatch (request, cacheName) {
       return caches.match(request, {
