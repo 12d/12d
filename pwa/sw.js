@@ -1,4 +1,4 @@
-const VERSION = 'v8';
+const VERSION = 'v9';
 const CACHE_NAME = 'service-worker-demo' + VERSION;
 
 console.log('begin');
