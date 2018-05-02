@@ -20,7 +20,7 @@ var __wpo = {
     "460f4946c829d43aea3d731b2fc2babb81ed4b71": "./static/js/manifest.3ad1d5771e9b13dbdad2.js",
     "852f1c3aaaff36e3dd70e9633a826b4fe3379daa": "./static/css/app.css",
     "1b73adf060891ff1ea1118b0033e28558522b1c7": "./",
-    "3ffd1a223dc7f8d60ba65e94681c930196ff4c32": "./static/sw-entry.js"
+    "ff9a8e2bd53683a572cfac2cc462783ac6d9e543": "./static/sw-entry.js"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
@@ -163,8 +163,8 @@ self.addEventListener('fetch', function (event) {
     var pathname = url.pathname
     var urlString = url.toString()
     var cacheUrl = urlString
-    var IS_12D = /12d\.github\.io\/dist/
-    var IS_STATIC = /\/dist\//
+    var IS_12D = /12d\.github\.io/
+    var IS_STATIC = /\/static\//
    //var IS_HOME = /^\/(e|u|n)\/(\d+)$/
     var IS_INDEX = /^\/index(?!\.)/
     //var IS_PREVIEW = /^\/preview(?!\.)/
