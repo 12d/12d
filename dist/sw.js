@@ -7,17 +7,12 @@ var __wpo = {
       "./static/js/manifest.3ad1d5771e9b13dbdad2.js",
       "./static/css/app.css",
       "./",
-      "./static/sw-entry.js",
-      "https://bank-static.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
-      "https://bank-static.pingan.com.cn/**"
+      "./static/sw-entry.js"
     ],
     "additional": [],
     "optional": []
   },
-  "externals": [
-    "https://bank-static.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
-    "https://bank-static.pingan.com.cn/**"
-  ],
+  "externals": [],
   "hashesMap": {
     "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "./static/images/dialog-downloadApp.f4999d8.jpg",
     "80ad2fc6a9cd4550edf4e1355598c9bd051d7cb0": "./static/js/app.a622ac4581bc97419826.js",
@@ -25,11 +20,11 @@ var __wpo = {
     "460f4946c829d43aea3d731b2fc2babb81ed4b71": "./static/js/manifest.3ad1d5771e9b13dbdad2.js",
     "852f1c3aaaff36e3dd70e9633a826b4fe3379daa": "./static/css/app.css",
     "d2e64c8e650493a7304506120c56dd9846802cd9": "./",
-    "8cf6e5c4b40feda2f0dcb90b261fc642d06d5c96": "./static/sw-entry.js"
+    "239f3554d99844367f502a35c412c66d96ff8b33": "./static/sw-entry.js"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-5-3 18:04:04",
+  "version": "2018-5-3 18:21:10",
   "name": "webpack-offline",
   "pluginVersion": "4.9.0",
   "relativePaths": false
