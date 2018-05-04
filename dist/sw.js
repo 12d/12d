@@ -7,12 +7,25 @@ var __wpo = {
       "./static/js/manifest.3ad1d5771e9b13dbdad2.js",
       "./static/css/app.css",
       "./",
-      "./static/sw-entry.js"
+      "./static/sw-entry.js",
+      "https://bank-static.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
+      "https://bank-static.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
+      "https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",
+      "https://bank-static.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
+      "https://bank-static.pingan.com.cn/omm/mobile/assets/plugins/product.js",
+      "https://bank-static.pingan.com.cn/app_com/??aladdin/ibankweb/1.0.15/aladdin.ibank.web.min.js,libs/zepto/1.2.0/zepto.min.js,share/2.0.0/share.js,adversdk/2.0.0/adversdk.js,zhida/1.0.0/zhida-creditcard.js,webtrends/h5/2.0.0/banksdc_m.js"
     ],
     "additional": [],
     "optional": []
   },
-  "externals": [],
+  "externals": [
+    "https://bank-static.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
+    "https://bank-static.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
+    "https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",
+    "https://bank-static.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
+    "https://bank-static.pingan.com.cn/omm/mobile/assets/plugins/product.js",
+    "https://bank-static.pingan.com.cn/app_com/??aladdin/ibankweb/1.0.15/aladdin.ibank.web.min.js,libs/zepto/1.2.0/zepto.min.js,share/2.0.0/share.js,adversdk/2.0.0/adversdk.js,zhida/1.0.0/zhida-creditcard.js,webtrends/h5/2.0.0/banksdc_m.js"
+  ],
   "hashesMap": {
     "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "./static/images/dialog-downloadApp.f4999d8.jpg",
     "80ad2fc6a9cd4550edf4e1355598c9bd051d7cb0": "./static/js/app.a622ac4581bc97419826.js",
@@ -24,7 +37,7 @@ var __wpo = {
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-5-3 18:21:10",
+  "version": "2018-5-4 11:22:16",
   "name": "webpack-offline",
   "pluginVersion": "4.9.0",
   "relativePaths": false
@@ -92,19 +105,121 @@ var __wpo = {
 /******/ 	__webpack_require__.p = "./";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "MRag");
+/******/ 	return __webpack_require__(__webpack_require__.s = "fTtR");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "5NEa":
+/***/ "0teS":
 /***/ (function(module, exports) {
 
 
+self.addEventListener('activate', function(event) {
+
+  const CACHE_NAME = __wpo.name + ':' + __wpo.version
+
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.map(function(cacheName) {
+          if (CACHE_NAME.indexOf(cacheName) === -1) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
+});
+
+self.addEventListener('fetch', function (event) {
+    function cachesMatch (request, cacheName) {
+      return caches.match(request, {
+        cacheName: cacheName
+      }).then(function (response) {
+        return response
+      })
+      // Return void if error happened (cache not found)
+      ['catch'](function () {})
+    }
+    function cacheFirst(cacheUrl, CACHE_NAME) {
+      var resource = cachesMatch(cacheUrl, CACHE_NAME).then(function (response) {
+        if (response) {
+          return response;
+        }
+        // Load and cache known assets
+        var fetching = fetch(urlString).then(function (response) {
+          if (!response.ok) {
+            return response;
+          }
+          (function () {
+            var responseClone = response.clone();
+            var storing = caches.open(CACHE_NAME).then(function (cache) {
+              return cache.put(urlString, responseClone);
+            }).then(function () {
+              console.log('[SW]:', 'Cache asset: ' + urlString);
+            });
+            event.waitUntil(storing);
+          })();
+  
+          return response;
+        });
+  
+        return fetching;
+      })
+      return resource
+    }
+    function netWorkFirst(cacheUrl, CACHE_NAME) {
+      var resource = fetch(cacheUrl).then(response => {
+        if (response.ok) {
+          var responseClone = response.clone()
+          var storing = caches.open(CACHE_NAME).then(function (cache) {
+            cache.put(cacheUrl, responseClone);
+          }).then(function () {
+            console.log('[SW]:', 'Cache asset: ' + cacheUrl);
+          });
+          event.waitUntil(storing);
+          return response;
+        }
+        // Throw to reach the code in the catch below
+        throw new Error('Response is not ok');
+      })
+      ['catch'](function () {
+        return cachesMatch(cacheUrl, CACHE_NAME);
+      });
+      return resource
+    }
+  
+    var url = new URL(event.request.url)
+    url.hash = ''
+    var pathname = url.pathname
+    var urlString = url.toString()
+    var cacheUrl = urlString
+    var IS_12D = /12d\.github\.io/
+    var IS_BANK_Static =/bank-static\.pingan\.com\.cn/
+    var IS_STATIC = /\/static\//
+   //var IS_HOME = /^\/(e|u|n)\/(\d+)$/
+    var IS_INDEX = /\/dist\/index./
+    //var IS_PREVIEW = /^\/preview(?!\.)/
+    var CACHE_PREFIX = __wpo.name
+    var CACHE_TAG = __wpo.version
+    var CACHE_NAME = CACHE_PREFIX + ':' + CACHE_TAG
+    var resource = undefined
+    var isGET = event.request.method === 'GET'
+    // 以缓存优先的形式缓存 static/* 静态资源
+    if ((cacheUrl.match(IS_BANK_Static)) && isGET) {
+      resource = cacheFirst(cacheUrl, CACHE_NAME)
+      event.respondWith(resource)
+    }
+    // 以网络优先的形式缓存 index页面
+    if ((pathname.match(IS_INDEX)) && isGET) {
+      resource = netWorkFirst(cacheUrl, CACHE_NAME)
+      event.respondWith(resource)
+    }
+  })
 
 /***/ }),
 
-/***/ "MRag":
+/***/ "fTtR":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -927,7 +1042,7 @@ loaders: {},
 cacheMaps: [],
 navigationPreload: false,
 });
-        module.exports = __webpack_require__("5NEa")
+        module.exports = __webpack_require__("0teS")
       
 
 /***/ })
