@@ -13,7 +13,6 @@ var __wpo = {
       "https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",
       "https://bank-static.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
       "https://bank-static.pingan.com.cn/omm/mobile/assets/plugins/product.js",
-      "https://bank-static.pingan.com.cn/app_com/??aladdin/ibankweb/1.0.15/aladdin.ibank.web.min.js,libs/zepto/1.2.0/zepto.min.js,share/2.0.0/share.js,adversdk/2.0.0/adversdk.js,zhida/1.0.0/zhida-creditcard.js,webtrends/h5/2.0.0/banksdc_m.js"
     ],
     "additional": [],
     "optional": []
@@ -24,7 +23,6 @@ var __wpo = {
     "https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",
     "https://bank-static.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
     "https://bank-static.pingan.com.cn/omm/mobile/assets/plugins/product.js",
-    "https://bank-static.pingan.com.cn/app_com/??aladdin/ibankweb/1.0.15/aladdin.ibank.web.min.js,libs/zepto/1.2.0/zepto.min.js,share/2.0.0/share.js,adversdk/2.0.0/adversdk.js,zhida/1.0.0/zhida-creditcard.js,webtrends/h5/2.0.0/banksdc_m.js"
   ],
   "hashesMap": {
     "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "./static/images/dialog-downloadApp.f4999d8.jpg",
