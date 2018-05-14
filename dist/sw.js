@@ -7,7 +7,6 @@ var __wpo = {
       "./static/js/manifest.3ad1d5771e9b13dbdad2.js",
       "./static/css/app.css",
       "./",
-      "./static/sw-entry.js",
       "https://bank-static.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
       "https://bank-static.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
       "https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",
