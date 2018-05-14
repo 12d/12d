@@ -12,7 +12,7 @@ var __wpo = {
       "https://bank-static.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
       "https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",
       "https://bank-static.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
-      "https://bank-static.pingan.com.cn/omm/mobile/assets/plugins/product.js",
+      "https://bank-static.pingan.com.cn/omm/mobile/assets/plugins/product.js"
     ],
     "additional": [],
     "optional": []
@@ -22,7 +22,7 @@ var __wpo = {
     "https://bank-static.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
     "https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",
     "https://bank-static.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
-    "https://bank-static.pingan.com.cn/omm/mobile/assets/plugins/product.js",
+    "https://bank-static.pingan.com.cn/omm/mobile/assets/plugins/product.js"
   ],
   "hashesMap": {
     "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "./static/images/dialog-downloadApp.f4999d8.jpg",
@@ -35,7 +35,7 @@ var __wpo = {
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-5-4 11:22:16",
+  "version": "2018-5-14 10:00:06",
   "name": "webpack-offline",
   "pluginVersion": "4.9.0",
   "relativePaths": false
