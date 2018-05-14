@@ -4,7 +4,7 @@ var __wpo = {
       "./static/images/dialog-downloadApp.f4999d8.jpg",
       "./static/js/app.a622ac4581bc97419826.js",
       "./static/js/vendor.b8fb59f36f0387abab1a.js",
-      "./static/js/manifest.ba63f92e1942f1e787ca.js",
+      "./static/js/manifest.3ad1d5771e9b13dbdad2.js",
       "./static/css/app.css",
       "./",
       "./static/sw-entry.js",
@@ -28,14 +28,14 @@ var __wpo = {
     "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "./static/images/dialog-downloadApp.f4999d8.jpg",
     "80ad2fc6a9cd4550edf4e1355598c9bd051d7cb0": "./static/js/app.a622ac4581bc97419826.js",
     "fdeae6f3c0c3a6e36d6ea2da8b77fcdcaa376b2f": "./static/js/vendor.b8fb59f36f0387abab1a.js",
-    "521f6fd6e58938b7f0f9f461977ddf12a14b02cc": "./static/js/manifest.ba63f92e1942f1e787ca.js",
-    "a2f7e450b7c9deebe73142e49d4a2ef8afb36f05": "./static/css/app.css",
-    "2958f1adc19c50ce9756d826f87d09e5d1bfa8bb": "./",
+    "460f4946c829d43aea3d731b2fc2babb81ed4b71": "./static/js/manifest.3ad1d5771e9b13dbdad2.js",
+    "852f1c3aaaff36e3dd70e9633a826b4fe3379daa": "./static/css/app.css",
+    "d2e64c8e650493a7304506120c56dd9846802cd9": "./",
     "239f3554d99844367f502a35c412c66d96ff8b33": "./static/sw-entry.js"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-5-14 10:22:52",
+  "version": "2018-5-14 10:30:29",
   "name": "webpack-offline",
   "pluginVersion": "4.9.0",
   "relativePaths": false
@@ -100,7 +100,7 @@ var __wpo = {
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "https://bank-static.pingan.com.cn/station/site/home";
+/******/ 	__webpack_require__.p = "./";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = "fTtR");
