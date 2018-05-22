@@ -7,12 +7,23 @@ var __wpo = {
       "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
       "https://12d.github.io/dist/static/css/app.css",
       "https://12d.github.io/dist/",
-      "https://12d.github.io/dist/static/sw-entry.js"
+      "https://12d.github.io/dist/static/sw-entry.js",
+      "https://bank-static-stg.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
+      "https://bank-static-stg.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
+      "https://bank-static-stg.pingan.com.cn/app_com/pab/1.0.0/pab.js",
+      "https://bank-static-stg.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
+      "https://bank-static-stg.pingan.com.cn/omm/mobile/assets/plugins/product.js"
     ],
     "additional": [],
     "optional": []
   },
-  "externals": [],
+  "externals": [
+    "https://bank-static-stg.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
+    "https://bank-static-stg.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
+    "https://bank-static-stg.pingan.com.cn/app_com/pab/1.0.0/pab.js",
+    "https://bank-static-stg.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
+    "https://bank-static-stg.pingan.com.cn/omm/mobile/assets/plugins/product.js"
+  ],
   "hashesMap": {
     "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "https://12d.github.io/dist/static/images/dialog-downloadApp.f4999d8.jpg",
     "9e89b1775ea1ffe2f1e6c1f7117ccabd465afd5e": "https://12d.github.io/dist/static/js/app.js?22201f5d97153af89488",
@@ -24,7 +35,7 @@ var __wpo = {
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-5-22 16:47:19",
+  "version": "2018-5-22 17:02:35",
   "name": "webpack-offline",
   "pluginVersion": "4.9.1",
   "relativePaths": false
