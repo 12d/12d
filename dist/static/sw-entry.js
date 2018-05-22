@@ -92,7 +92,7 @@ self.addEventListener('fetch', function (event) {
     var resource = undefined
     var isGET = event.request.method === 'GET'
     // 以缓存优先的形式缓存 static/* 静态资源
-    if ((cacheUrl.match(IS_12D)) && isGET) {
+    if ((cacheUrl.match(IS_BANK_Static)) && isGET) {
       resource = cacheFirst(cacheUrl, CACHE_NAME)
       event.respondWith(resource)
     }

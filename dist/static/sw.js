@@ -31,11 +31,11 @@ var __wpo = {
     "736fa9491c00b600c6f9f182223ebbb120817c0f": "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
     "b7a0f99dd78c9cc02b056d164efc09ae16e2c39d": "https://12d.github.io/dist/static/css/app.css",
     "a1c8d35e4d17e19ec67bc4121ef7499c0839b5cd": "https://12d.github.io/dist/",
-    "1ee6ec877af8c4f94e472579715db34e4216f7d9": "https://12d.github.io/dist/static/sw-entry.js"
+    "0081945751e3c1c675ff563765d9b3fc7bc78d12": "https://12d.github.io/dist/static/sw-entry.js"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-5-22 17:02:35",
+  "version": "2018-5-22 17:09:30",
   "name": "webpack-offline",
   "pluginVersion": "4.9.1",
   "relativePaths": false
@@ -205,7 +205,7 @@ self.addEventListener('fetch', function (event) {
     var resource = undefined
     var isGET = event.request.method === 'GET'
     // 以缓存优先的形式缓存 static/* 静态资源
-    if ((cacheUrl.match(IS_12D)) && isGET) {
+    if ((cacheUrl.match(IS_BANK_Static)) && isGET) {
       resource = cacheFirst(cacheUrl, CACHE_NAME)
       event.respondWith(resource)
     }
