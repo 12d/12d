@@ -1,30 +1,30 @@
 var __wpo = {
   "assets": {
     "main": [
-      "./static/images/dialog-downloadApp.f4999d8.jpg",
-      "./static/js/app.js?37b96e025e6ed6a85bbf",
-      "./static/js/vendor.js?83f7f855d0e9bf49d907",
-      "./static/js/manifest.js?6a301dfdd76272414855",
-      "./static/css/app.css",
-      "./",
-      "./static/sw-entry.js"
+      "https://12d.github.io/dist/static/images/dialog-downloadApp.f4999d8.jpg",
+      "https://12d.github.io/dist/static/js/app.js?22201f5d97153af89488",
+      "https://12d.github.io/dist/static/js/vendor.js?4b90aa01e2ce5f6393e7",
+      "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
+      "https://12d.github.io/dist/static/css/app.css",
+      "https://12d.github.io/dist/",
+      "https://12d.github.io/dist/static/sw-entry.js"
     ],
     "additional": [],
     "optional": []
   },
   "externals": [],
   "hashesMap": {
-    "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "./static/images/dialog-downloadApp.f4999d8.jpg",
-    "d7d91f6b7b358cf70be8ea62e462a32a28537815": "./static/js/app.js?37b96e025e6ed6a85bbf",
-    "4b5bae40aef1dab292c00920ba61f3df624fe62e": "./static/js/vendor.js?83f7f855d0e9bf49d907",
-    "736fa9491c00b600c6f9f182223ebbb120817c0f": "./static/js/manifest.js?6a301dfdd76272414855",
-    "b7a0f99dd78c9cc02b056d164efc09ae16e2c39d": "./static/css/app.css",
-    "251422976bb3f26441f2e3ca7c6c6665bdef224c": "./",
-    "84cf7649827fb32a37571efbfb36b08579fb4c09": "./static/sw-entry.js"
+    "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "https://12d.github.io/dist/static/images/dialog-downloadApp.f4999d8.jpg",
+    "9e89b1775ea1ffe2f1e6c1f7117ccabd465afd5e": "https://12d.github.io/dist/static/js/app.js?22201f5d97153af89488",
+    "d03102e6933e3422420862109659f6ae326f45c3": "https://12d.github.io/dist/static/js/vendor.js?4b90aa01e2ce5f6393e7",
+    "736fa9491c00b600c6f9f182223ebbb120817c0f": "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
+    "b7a0f99dd78c9cc02b056d164efc09ae16e2c39d": "https://12d.github.io/dist/static/css/app.css",
+    "92d02c23f66a311d7d8144bd84a44b5eb3971c69": "https://12d.github.io/dist/",
+    "84cf7649827fb32a37571efbfb36b08579fb4c09": "https://12d.github.io/dist/static/sw-entry.js"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-5-22 10:56:56",
+  "version": "2018-5-22 11:03:14",
   "name": "webpack-offline",
   "pluginVersion": "4.9.1",
   "relativePaths": false
