@@ -83,7 +83,8 @@ self.addEventListener('fetch', function (event) {
     var IS_BANK_Static =/bank-static-stg\.pingan\.com\.cn/
     var IS_STATIC = /\/static\//
    //var IS_HOME = /^\/(e|u|n)\/(\d+)$/
-    var IS_INDEX = /\/home\/index./
+    var IS_INDEX1 = /\/dist\/index./
+    var IS_INDEX2 = /\/home\/index./
     //var IS_PREVIEW = /^\/preview(?!\.)/
     var CACHE_PREFIX = __wpo.name
     var CACHE_TAG = __wpo.version
@@ -91,12 +92,12 @@ self.addEventListener('fetch', function (event) {
     var resource = undefined
     var isGET = event.request.method === 'GET'
     // 以缓存优先的形式缓存 static/* 静态资源
-    if ((cacheUrl.match(IS_BANK_Static)) && isGET) {
+    if ((cacheUrl.match(IS_12D)) && isGET) {
       resource = cacheFirst(cacheUrl, CACHE_NAME)
       event.respondWith(resource)
     }
     // 以网络优先的形式缓存 index页面
-    if ((pathname.match(IS_INDEX)) && isGET) {
+    if ((pathname.match(IS_INDEX1)) && isGET) {
       resource = netWorkFirst(cacheUrl, CACHE_NAME)
       event.respondWith(resource)
     }

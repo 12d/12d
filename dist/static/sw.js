@@ -20,11 +20,11 @@ var __wpo = {
     "736fa9491c00b600c6f9f182223ebbb120817c0f": "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
     "b7a0f99dd78c9cc02b056d164efc09ae16e2c39d": "https://12d.github.io/dist/static/css/app.css",
     "92d02c23f66a311d7d8144bd84a44b5eb3971c69": "https://12d.github.io/dist/",
-    "84cf7649827fb32a37571efbfb36b08579fb4c09": "https://12d.github.io/dist/static/sw-entry.js"
+    "1ee6ec877af8c4f94e472579715db34e4216f7d9": "https://12d.github.io/dist/static/sw-entry.js"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-5-22 11:38:42",
+  "version": "2018-5-22 11:46:55",
   "name": "webpack-offline",
   "pluginVersion": "4.9.1",
   "relativePaths": false
@@ -185,7 +185,8 @@ self.addEventListener('fetch', function (event) {
     var IS_BANK_Static =/bank-static-stg\.pingan\.com\.cn/
     var IS_STATIC = /\/static\//
    //var IS_HOME = /^\/(e|u|n)\/(\d+)$/
-    var IS_INDEX = /\/home\/index./
+    var IS_INDEX1 = /\/dist\/index./
+    var IS_INDEX2 = /\/home\/index./
     //var IS_PREVIEW = /^\/preview(?!\.)/
     var CACHE_PREFIX = __wpo.name
     var CACHE_TAG = __wpo.version
@@ -193,12 +194,12 @@ self.addEventListener('fetch', function (event) {
     var resource = undefined
     var isGET = event.request.method === 'GET'
     // 以缓存优先的形式缓存 static/* 静态资源
-    if ((cacheUrl.match(IS_BANK_Static)) && isGET) {
+    if ((cacheUrl.match(IS_12D)) && isGET) {
       resource = cacheFirst(cacheUrl, CACHE_NAME)
       event.respondWith(resource)
     }
     // 以网络优先的形式缓存 index页面
-    if ((pathname.match(IS_INDEX)) && isGET) {
+    if ((pathname.match(IS_INDEX1)) && isGET) {
       resource = netWorkFirst(cacheUrl, CACHE_NAME)
       event.respondWith(resource)
     }
