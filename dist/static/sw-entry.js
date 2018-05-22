@@ -80,10 +80,10 @@ self.addEventListener('fetch', function (event) {
     var urlString = url.toString()
     var cacheUrl = urlString
     var IS_12D = /12d\.github\.io/
-    var IS_BANK_Static =/bank-static\.pingan\.com\.cn/
+    var IS_BANK_Static =/bank-static-stg\.pingan\.com\.cn/
     var IS_STATIC = /\/static\//
    //var IS_HOME = /^\/(e|u|n)\/(\d+)$/
-    var IS_INDEX = /\/dist\/index./
+    var IS_INDEX = /\/home\/index./
     //var IS_PREVIEW = /^\/preview(?!\.)/
     var CACHE_PREFIX = __wpo.name
     var CACHE_TAG = __wpo.version

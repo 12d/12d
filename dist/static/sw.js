@@ -2,42 +2,31 @@ var __wpo = {
   "assets": {
     "main": [
       "./static/images/dialog-downloadApp.f4999d8.jpg",
-      "./static/js/app.a622ac4581bc97419826.js",
-      "./static/js/vendor.b8fb59f36f0387abab1a.js",
-      "./static/js/manifest.3ad1d5771e9b13dbdad2.js",
+      "./static/js/app.js?37b96e025e6ed6a85bbf",
+      "./static/js/vendor.js?83f7f855d0e9bf49d907",
+      "./static/js/manifest.js?71f9b6f0bf77cecf3cad",
       "./static/css/app.css",
       "./",
-      "./static/sw-entry.js",
-      "https://bank-static.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
-      "https://bank-static.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
-      "https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",
-      "https://bank-static.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
-      "https://bank-static.pingan.com.cn/omm/mobile/assets/plugins/product.js"
+      "./static/sw-entry.js"
     ],
     "additional": [],
     "optional": []
   },
-  "externals": [
-    "https://bank-static.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
-    "https://bank-static.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
-    "https://bank-static.pingan.com.cn/app_com/pab/1.0.0/pab.js",
-    "https://bank-static.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
-    "https://bank-static.pingan.com.cn/omm/mobile/assets/plugins/product.js"
-  ],
+  "externals": [],
   "hashesMap": {
     "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "./static/images/dialog-downloadApp.f4999d8.jpg",
-    "80ad2fc6a9cd4550edf4e1355598c9bd051d7cb0": "./static/js/app.a622ac4581bc97419826.js",
-    "fdeae6f3c0c3a6e36d6ea2da8b77fcdcaa376b2f": "./static/js/vendor.b8fb59f36f0387abab1a.js",
-    "460f4946c829d43aea3d731b2fc2babb81ed4b71": "./static/js/manifest.3ad1d5771e9b13dbdad2.js",
-    "852f1c3aaaff36e3dd70e9633a826b4fe3379daa": "./static/css/app.css",
-    "d2e64c8e650493a7304506120c56dd9846802cd9": "./",
-    "239f3554d99844367f502a35c412c66d96ff8b33": "./static/sw-entry.js"
+    "d7d91f6b7b358cf70be8ea62e462a32a28537815": "./static/js/app.js?37b96e025e6ed6a85bbf",
+    "4b5bae40aef1dab292c00920ba61f3df624fe62e": "./static/js/vendor.js?83f7f855d0e9bf49d907",
+    "43d63e9cf639f5cb25fd5c1386f69daf9b097901": "./static/js/manifest.js?71f9b6f0bf77cecf3cad",
+    "c36950ef62a8bf2861a76006df74068f42628bfa": "./static/css/app.css",
+    "21622969b9a012e4c9360fd9b9579255d8d256a5": "./",
+    "84cf7649827fb32a37571efbfb36b08579fb4c09": "./static/sw-entry.js"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-5-14 15:39:33",
+  "version": "2018-5-22 10:39:57",
   "name": "webpack-offline",
-  "pluginVersion": "4.9.0",
+  "pluginVersion": "4.9.1",
   "relativePaths": false
 };
 
@@ -100,10 +89,10 @@ var __wpo = {
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "./";
+/******/ 	__webpack_require__.p = "https://bank-static-stg.pingan.com.cn/station/site/home/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "fTtR");
+/******/ 	return __webpack_require__(__webpack_require__.s = "r+aI");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -193,10 +182,10 @@ self.addEventListener('fetch', function (event) {
     var urlString = url.toString()
     var cacheUrl = urlString
     var IS_12D = /12d\.github\.io/
-    var IS_BANK_Static =/bank-static\.pingan\.com\.cn/
+    var IS_BANK_Static =/bank-static-stg\.pingan\.com\.cn/
     var IS_STATIC = /\/static\//
    //var IS_HOME = /^\/(e|u|n)\/(\d+)$/
-    var IS_INDEX = /\/dist\/index./
+    var IS_INDEX = /\/home\/index./
     //var IS_PREVIEW = /^\/preview(?!\.)/
     var CACHE_PREFIX = __wpo.name
     var CACHE_TAG = __wpo.version
@@ -217,7 +206,7 @@ self.addEventListener('fetch', function (event) {
 
 /***/ }),
 
-/***/ "fTtR":
+/***/ "r+aI":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -973,7 +962,7 @@ function cachesMatch(request, cacheName) {
   return caches.match(request, {
     cacheName: cacheName
   }).then(function (response) {
-    if (isNotRedirectedResponse()) {
+    if (isNotRedirectedResponse(response)) {
       return response;
     }
 
