@@ -3,7 +3,7 @@ var __wpo = {
     "main": [
       "https://12d.github.io/dist/static/images/dialog-downloadApp.f4999d8.jpg",
       "https://12d.github.io/dist/static/js/app.js?22201f5d97153af89488",
-      "https://12d.github.io/dist/static/js/vendor.js?a869d82b9f4bffe870b1",
+      "https://12d.github.io/dist/static/js/vendor.js?6334ebe32cf310a45453",
       "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
       "https://12d.github.io/dist/static/css/app.css",
       "https://12d.github.io/dist/",
@@ -16,15 +16,15 @@ var __wpo = {
   "hashesMap": {
     "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "https://12d.github.io/dist/static/images/dialog-downloadApp.f4999d8.jpg",
     "9e89b1775ea1ffe2f1e6c1f7117ccabd465afd5e": "https://12d.github.io/dist/static/js/app.js?22201f5d97153af89488",
-    "c581639bade4f29c2ce3cc1dd866078c61f159b5": "https://12d.github.io/dist/static/js/vendor.js?a869d82b9f4bffe870b1",
+    "eff16b34086002cf0da16daf9f70d74246fa374b": "https://12d.github.io/dist/static/js/vendor.js?6334ebe32cf310a45453",
     "736fa9491c00b600c6f9f182223ebbb120817c0f": "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
     "b7a0f99dd78c9cc02b056d164efc09ae16e2c39d": "https://12d.github.io/dist/static/css/app.css",
-    "7d71da17053b3fa13ce0d1c89c47aabfc62be150": "https://12d.github.io/dist/",
+    "a1c8d35e4d17e19ec67bc4121ef7499c0839b5cd": "https://12d.github.io/dist/",
     "1ee6ec877af8c4f94e472579715db34e4216f7d9": "https://12d.github.io/dist/static/sw-entry.js"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-5-22 16:27:11",
+  "version": "2018-5-22 16:47:19",
   "name": "webpack-offline",
   "pluginVersion": "4.9.1",
   "relativePaths": false
