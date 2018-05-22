@@ -2,8 +2,8 @@ var __wpo = {
   "assets": {
     "main": [
       "https://12d.github.io/dist/static/images/dialog-downloadApp.f4999d8.jpg",
-      "https://12d.github.io/dist/static/js/app.js?2273db477af03f871e28",
-      "https://12d.github.io/dist/static/js/vendor.js?ece2ec0ef37c4b785690",
+      "https://12d.github.io/dist/static/js/app.js?22201f5d97153af89488",
+      "https://12d.github.io/dist/static/js/vendor.js?4b90aa01e2ce5f6393e7",
       "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
       "https://12d.github.io/dist/static/css/app.css",
       "https://12d.github.io/dist/",
@@ -15,16 +15,16 @@ var __wpo = {
   "externals": [],
   "hashesMap": {
     "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "https://12d.github.io/dist/static/images/dialog-downloadApp.f4999d8.jpg",
-    "f5b867a48c68c441fb31e2cd086b8e108160c60c": "https://12d.github.io/dist/static/js/app.js?2273db477af03f871e28",
-    "39e7d815b67207af74de18f0bf012a3ea2e022d1": "https://12d.github.io/dist/static/js/vendor.js?ece2ec0ef37c4b785690",
+    "9e89b1775ea1ffe2f1e6c1f7117ccabd465afd5e": "https://12d.github.io/dist/static/js/app.js?22201f5d97153af89488",
+    "d03102e6933e3422420862109659f6ae326f45c3": "https://12d.github.io/dist/static/js/vendor.js?4b90aa01e2ce5f6393e7",
     "736fa9491c00b600c6f9f182223ebbb120817c0f": "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
     "b7a0f99dd78c9cc02b056d164efc09ae16e2c39d": "https://12d.github.io/dist/static/css/app.css",
-    "b40e0a174d52dc6e4473cbef067de5df7a384501": "https://12d.github.io/dist/",
+    "92d02c23f66a311d7d8144bd84a44b5eb3971c69": "https://12d.github.io/dist/",
     "1ee6ec877af8c4f94e472579715db34e4216f7d9": "https://12d.github.io/dist/static/sw-entry.js"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-5-22 14:17:39",
+  "version": "2018-5-22 14:20:54",
   "name": "webpack-offline",
   "pluginVersion": "4.9.1",
   "relativePaths": false
