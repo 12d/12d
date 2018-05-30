@@ -7,7 +7,6 @@ var __wpo = {
       "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
       "https://12d.github.io/dist/static/css/app.css",
       "https://12d.github.io/dist/",
-      "https://12d.github.io/dist/static/sw-entry.js",
       "https://bank-static-stg.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
       "https://bank-static-stg.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
       "https://bank-static-stg.pingan.com.cn/app_com/pab/1.0.0/pab.js",
@@ -30,12 +29,11 @@ var __wpo = {
     "4fa15d115aae432394c2655c2bc312547028110f": "https://12d.github.io/dist/static/js/vendor.js?5571de9a12c18499c477",
     "736fa9491c00b600c6f9f182223ebbb120817c0f": "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
     "b7a0f99dd78c9cc02b056d164efc09ae16e2c39d": "https://12d.github.io/dist/static/css/app.css",
-    "0a73e7b76ac1a454bfd7e7b49058907acab92fe0": "https://12d.github.io/dist/",
-    "0081945751e3c1c675ff563765d9b3fc7bc78d12": "https://12d.github.io/dist/static/sw-entry.js"
+    "0a73e7b76ac1a454bfd7e7b49058907acab92fe0": "https://12d.github.io/dist/"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-5-30 15:42:07",
+  "version": "2018-5-30 19:06:37",
   "name": "webpack-offline",
   "pluginVersion": "4.9.1",
   "relativePaths": false
@@ -103,122 +101,12 @@ var __wpo = {
 /******/ 	__webpack_require__.p = "https://12d.github.io/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "r+aI");
+/******/ 	return __webpack_require__(__webpack_require__.s = "F/M7");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "0teS":
-/***/ (function(module, exports) {
-
-
-self.addEventListener('activate', function(event) {
-
-  const CACHE_NAME = __wpo.name + ':' + __wpo.version
-
-  event.waitUntil(
-    caches.keys().then(function(cacheNames) {
-      return Promise.all(
-        cacheNames.map(function(cacheName) {
-          if (CACHE_NAME.indexOf(cacheName) === -1) {
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    })
-  );
-});
-
-self.addEventListener('fetch', function (event) {
-    function cachesMatch (request, cacheName) {
-      return caches.match(request, {
-        cacheName: cacheName
-      }).then(function (response) {
-        return response
-      })
-      // Return void if error happened (cache not found)
-      ['catch'](function () {})
-    }
-    function cacheFirst(cacheUrl, CACHE_NAME) {
-      var resource = cachesMatch(cacheUrl, CACHE_NAME).then(function (response) {
-        if (response) {
-          return response;
-        }
-        // Load and cache known assets
-        var fetching = fetch(urlString).then(function (response) {
-          if (!response.ok) {
-            return response;
-          }
-          (function () {
-            var responseClone = response.clone();
-            var storing = caches.open(CACHE_NAME).then(function (cache) {
-              return cache.put(urlString, responseClone);
-            }).then(function () {
-              console.log('[SW]:', 'Cache asset: ' + urlString);
-            });
-            event.waitUntil(storing);
-          })();
-  
-          return response;
-        });
-  
-        return fetching;
-      })
-      return resource
-    }
-    function netWorkFirst(cacheUrl, CACHE_NAME) {
-      var resource = fetch(cacheUrl).then(response => {
-        if (response.ok) {
-          var responseClone = response.clone()
-          var storing = caches.open(CACHE_NAME).then(function (cache) {
-            cache.put(cacheUrl, responseClone);
-          }).then(function () {
-            console.log('[SW]:', 'Cache asset: ' + cacheUrl);
-          });
-          event.waitUntil(storing);
-          return response;
-        }
-        // Throw to reach the code in the catch below
-        throw new Error('Response is not ok');
-      })
-      ['catch'](function () {
-        return cachesMatch(cacheUrl, CACHE_NAME);
-      });
-      return resource
-    }
-  
-    var url = new URL(event.request.url)
-    url.hash = ''
-    var pathname = url.pathname
-    var urlString = url.toString()
-    var cacheUrl = urlString
-    var IS_12D = /12d\.github\.io/
-    var IS_BANK_Static =/bank-static-stg\.pingan\.com\.cn/
-    var IS_STATIC = /\/static\//
-   //var IS_HOME = /^\/(e|u|n)\/(\d+)$/
-    var IS_INDEX1 = /\/dist\/index./
-    var IS_INDEX2 = /\/home\/index./
-    //var IS_PREVIEW = /^\/preview(?!\.)/
-    var CACHE_PREFIX = __wpo.name
-    var CACHE_TAG = __wpo.version
-    var CACHE_NAME = CACHE_PREFIX + ':' + CACHE_TAG
-    var resource = undefined
-    var isGET = event.request.method === 'GET'
-    // 以缓存优先的形式缓存 static/* 静态资源
-    if ((cacheUrl.match(IS_BANK_Static)) && isGET) {
-      resource = cacheFirst(cacheUrl, CACHE_NAME)
-      event.respondWith(resource)
-    }
-    // 以网络优先的形式缓存 index页面
-    if ((pathname.match(IS_INDEX1)) && isGET) {
-      resource = netWorkFirst(cacheUrl, CACHE_NAME)
-      event.respondWith(resource)
-    }
-  })
-
-/***/ }),
-
-/***/ "r+aI":
+/***/ "F/M7":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1041,8 +929,118 @@ loaders: {},
 cacheMaps: [],
 navigationPreload: false,
 });
-        module.exports = __webpack_require__("0teS")
+        module.exports = __webpack_require__("r87Z")
       
+
+/***/ }),
+
+/***/ "r87Z":
+/***/ (function(module, exports) {
+
+
+self.addEventListener('activate', function(event) {
+
+    const CACHE_NAME = __wpo.name + ':' + __wpo.version
+  
+    event.waitUntil(
+      caches.keys().then(function(cacheNames) {
+        return Promise.all(
+          cacheNames.map(function(cacheName) {
+            if (CACHE_NAME.indexOf(cacheName) === -1) {
+              return caches.delete(cacheName);
+            }
+          })
+        );
+      })
+    );
+  });
+  
+  self.addEventListener('fetch', function (event) {
+      function cachesMatch (request, cacheName) {
+        return caches.match(request, {
+          cacheName: cacheName
+        }).then(function (response) {
+          return response
+        })
+        // Return void if error happened (cache not found)
+        ['catch'](function () {})
+      }
+      function cacheFirst(cacheUrl, CACHE_NAME) {
+        var resource = cachesMatch(cacheUrl, CACHE_NAME).then(function (response) {
+          if (response) {
+            return response;
+          }
+          // Load and cache known assets
+          var fetching = fetch(urlString).then(function (response) {
+            if (!response.ok) {
+              return response;
+            }
+            (function () {
+              var responseClone = response.clone();
+              var storing = caches.open(CACHE_NAME).then(function (cache) {
+                return cache.put(urlString, responseClone);
+              }).then(function () {
+                console.log('[SW]:', 'Cache asset: ' + urlString);
+              });
+              event.waitUntil(storing);
+            })();
+    
+            return response;
+          });
+    
+          return fetching;
+        })
+        return resource
+      }
+      function netWorkFirst(cacheUrl, CACHE_NAME) {
+        var resource = fetch(cacheUrl).then(response => {
+          if (response.ok) {
+            var responseClone = response.clone()
+            var storing = caches.open(CACHE_NAME).then(function (cache) {
+              cache.put(cacheUrl, responseClone);
+            }).then(function () {
+              console.log('[SW]:', 'Cache asset: ' + cacheUrl);
+            });
+            event.waitUntil(storing);
+            return response;
+          }
+          // Throw to reach the code in the catch below
+          throw new Error('Response is not ok');
+        })
+        ['catch'](function () {
+          return cachesMatch(cacheUrl, CACHE_NAME);
+        });
+        return resource
+      }
+    
+      var url = new URL(event.request.url)
+      url.hash = ''
+      var pathname = url.pathname
+      var urlString = url.toString()
+      var cacheUrl = urlString
+      var IS_12D = /12d\.github\.io/
+      var IS_BANK_Static =/bank-static-stg\.pingan\.com\.cn/
+      var IS_STATIC = /\/static\//
+     //var IS_HOME = /^\/(e|u|n)\/(\d+)$/
+      var IS_INDEX1 = /\/dist\/index./
+      var IS_INDEX2 = /\/home\/index./
+      //var IS_PREVIEW = /^\/preview(?!\.)/
+      var CACHE_PREFIX = __wpo.name
+      var CACHE_TAG = __wpo.version
+      var CACHE_NAME = CACHE_PREFIX + ':' + CACHE_TAG
+      var resource = undefined
+      var isGET = event.request.method === 'GET'
+      // 以缓存优先的形式缓存 static/* 静态资源
+      if ((cacheUrl.match(IS_BANK_Static)) && isGET) {
+        resource = cacheFirst(cacheUrl, CACHE_NAME)
+        event.respondWith(resource)
+      }
+      // 以网络优先的形式缓存 index页面
+      if ((pathname.match(IS_INDEX1)) && isGET) {
+        resource = netWorkFirst(cacheUrl, CACHE_NAME)
+        event.respondWith(resource)
+      }
+    })
 
 /***/ })
 
