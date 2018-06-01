@@ -29,11 +29,11 @@ var __wpo = {
     "4fa15d115aae432394c2655c2bc312547028110f": "https://12d.github.io/dist/static/js/vendor.js?5571de9a12c18499c477",
     "736fa9491c00b600c6f9f182223ebbb120817c0f": "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
     "b7a0f99dd78c9cc02b056d164efc09ae16e2c39d": "https://12d.github.io/dist/static/css/app.css",
-    "0a73e7b76ac1a454bfd7e7b49058907acab92fe0": "https://12d.github.io/dist/"
+    "355b907153d1a19866b17baedd13cb8543983c53": "https://12d.github.io/dist/"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-6-1 15:39:27",
+  "version": "2018-6-1 15:46:52",
   "name": "webpack-offline",
   "pluginVersion": "4.9.1",
   "relativePaths": false
