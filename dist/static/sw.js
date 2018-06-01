@@ -33,7 +33,7 @@ var __wpo = {
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-5-30 19:30:56",
+  "version": "2018-6-1 15:39:27",
   "name": "webpack-offline",
   "pluginVersion": "4.9.1",
   "relativePaths": false
@@ -1020,6 +1020,7 @@ self.addEventListener('fetch', function (event) {
       var cacheUrl = urlString
       var IS_12D = /12d\.github\.io/
       var IS_BANK_Static = /bank-static\.pingan\.com\.cn/
+      var IS_RSB =/rsb-stg\.pingan\.com\.cn/
       var IS_STATIC = /\/static\//
       //var IS_HOME = /^\/(e|u|n)\/(\d+)$/
       var IS_INDEX1 = /\/dist\/index./
@@ -1035,7 +1036,7 @@ self.addEventListener('fetch', function (event) {
       var resource = undefined
       var isGET = event.request.method === 'GET'
       // 以缓存优先的形式缓存 static/* 静态资源
-      if ((cacheUrl.match(IS_BANK_Static)) && isGET) {
+      if ((cacheUrl.match(IS_BANK_Static)||cacheUrl.match(IS_RSB)) && isGET) {
         resource = cacheFirst(cacheUrl, CACHE_NAME)
         event.respondWith(resource)
       }
