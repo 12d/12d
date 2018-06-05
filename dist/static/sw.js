@@ -31,11 +31,11 @@ var __wpo = {
     "736fa9491c00b600c6f9f182223ebbb120817c0f": "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
     "b7a0f99dd78c9cc02b056d164efc09ae16e2c39d": "https://12d.github.io/dist/static/css/app.css",
     "30d2796e1a384fe9bd3639e27ebb3f23b84d3951": "https://12d.github.io/dist/",
-    "c13b636a1082e9bdc71d254a452d4a562fd9019d": "https://12d.github.io/dist/static/sw-entry.js"
+    "ca4f55973b172196d9ee0d582cdc6b99de5b7691": "https://12d.github.io/dist/static/sw-entry.js"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-6-5 19:50:53",
+  "version": "2018-6-5 19:55:23",
   "name": "webpack-offline",
   "pluginVersion": "5.0.5",
   "relativePaths": false
@@ -193,7 +193,7 @@ self.addEventListener('fetch', function (event) {
     var urlString = url.toString()
     var cacheUrl = urlString
     var IS_12D = /12d\.github\.io/
-    var IS_BANK_Static =/b-stg\.pingan\.com\.cn/
+    var IS_BANK_Static =/b-stg\.pingan\.com\.cn\/station\/site\/home/
     var IS_STATIC = /\/static\//
    //var IS_HOME = /^\/(e|u|n)\/(\d+)$/
     var IS_INDEX1 = /\/dist\/index./

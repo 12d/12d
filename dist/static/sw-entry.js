@@ -80,7 +80,7 @@ self.addEventListener('fetch', function (event) {
     var urlString = url.toString()
     var cacheUrl = urlString
     var IS_12D = /12d\.github\.io/
-    var IS_BANK_Static =/b-stg\.pingan\.com\.cn/
+    var IS_BANK_Static =/b-stg\.pingan\.com\.cn\/station\/site\/home/
     var IS_STATIC = /\/static\//
    //var IS_HOME = /^\/(e|u|n)\/(\d+)$/
     var IS_INDEX1 = /\/dist\/index./
