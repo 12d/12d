@@ -40,9 +40,7 @@ var __wpo = {
   "pluginVersion": "5.0.5",
   "relativePaths": false,
   "prefetchRequest": {
-    "credentials": "same-origin",
-    "mode": "no-cors"
-  }
+    "credentials": "same-origin"  }
 };
 
 /******/ (function(modules) { // webpackBootstrap
