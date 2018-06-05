@@ -41,7 +41,7 @@ var __wpo = {
   "relativePaths": false,
   "prefetchRequest": {
     "credentials": "include",
-    "mode": "no-cors"
+    "mode": "cors"
   }
 };
 
