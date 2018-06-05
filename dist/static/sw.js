@@ -35,14 +35,10 @@ var __wpo = {
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-6-5 19:22:25",
+  "version": "2018-6-5 19:50:53",
   "name": "webpack-offline",
   "pluginVersion": "5.0.5",
-  "relativePaths": false,
-  "prefetchRequest": {
-    "credentials": "include",
-    "mode": "cors"
-  }
+  "relativePaths": false
 };
 
 /******/ (function(modules) { // webpackBootstrap
@@ -107,7 +103,7 @@ var __wpo = {
 /******/ 	__webpack_require__.p = "https://12d.github.io/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "2/E+");
+/******/ 	return __webpack_require__(__webpack_require__.s = "NEP5");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -222,7 +218,7 @@ self.addEventListener('fetch', function (event) {
 
 /***/ }),
 
-/***/ "2/E+":
+/***/ "NEP5":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1001,7 +997,13 @@ function logGroup(title, assets) {
 }
         WebpackServiceWorker(__wpo, {
 loaders: {},
-cacheMaps: [],
+cacheMaps: [
+      {
+      match: undefined,
+      to: null,
+      requestTypes: ["navigate"],
+    }
+    ],
 navigationPreload: false,
 });
         module.exports = __webpack_require__("0teS")
