@@ -80,7 +80,7 @@ self.addEventListener('fetch', function (event) {
     var urlString = url.toString()
     var cacheUrl = urlString
     var IS_12D = /(12d\.github\.io)$/
-    var IS_BANK_Static =/b-stg\.pingan\.com\.cn\/station\/site\/home/
+    var IS_BANK_Static =/bank-static-stg\.pingan\.com\.cn/
     var IS_STATIC = /\/static\//
    //var IS_HOME = /^\/(e|u|n)\/(\d+)$/
     var IS_INDEX1 = /\/dist\/index./
@@ -97,7 +97,7 @@ self.addEventListener('fetch', function (event) {
       event.respondWith(resource)
     }
     // 以网络优先的形式缓存 index页面
-    if ((pathname.match(IS_12D)) && isGET) {
+    if ((cacheUrl.match(IS_12D)) && isGET) {
       resource = netWorkFirst(cacheUrl, CACHE_NAME)
       event.respondWith(resource)
     }

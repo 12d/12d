@@ -1,13 +1,13 @@
 var __wpo = {
   "assets": {
     "main": [
-      "https://12d.github.io/dist/static/images/dialog-downloadApp.f4999d8.jpg",
-      "https://12d.github.io/dist/static/js/app.js?daf0e559de290c290e0b",
-      "https://12d.github.io/dist/static/js/vendor.js?1a46e1a88eb28672e1f0",
-      "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
-      "https://12d.github.io/dist/static/css/app.css",
-      "https://12d.github.io/dist/",
-      "https://12d.github.io/dist/static/sw-entry.js",
+      "https://bank-static-stg.pingan.com.cn/station/site/home/static/images/dialog-downloadApp.f4999d8.jpg",
+      "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/app.js?daf0e559de290c290e0b",
+      "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/vendor.js?a7958002a141a7b8d499",
+      "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/manifest.js?71f9b6f0bf77cecf3cad",
+      "https://bank-static-stg.pingan.com.cn/station/site/home/static/css/app.css",
+      "https://bank-static-stg.pingan.com.cn/station/site/home/",
+      "https://bank-static-stg.pingan.com.cn/station/site/home/static/sw-entry.js",
       "https://bank-static-stg.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
       "https://bank-static-stg.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
       "https://bank-static-stg.pingan.com.cn/app_com/pab/1.0.0/pab.js",
@@ -25,17 +25,17 @@ var __wpo = {
     "https://bank-static-stg.pingan.com.cn/omm/mobile/assets/plugins/product.js"
   ],
   "hashesMap": {
-    "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "https://12d.github.io/dist/static/images/dialog-downloadApp.f4999d8.jpg",
-    "f68d3e2846936050aca34228378d4ba99ca1f852": "https://12d.github.io/dist/static/js/app.js?daf0e559de290c290e0b",
-    "ee16492fa2c3b877ca6b2a2efce74bf82a2588f6": "https://12d.github.io/dist/static/js/vendor.js?1a46e1a88eb28672e1f0",
-    "736fa9491c00b600c6f9f182223ebbb120817c0f": "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
-    "b7a0f99dd78c9cc02b056d164efc09ae16e2c39d": "https://12d.github.io/dist/static/css/app.css",
-    "16221078ea8c91d23c813d36cc49c437388336f2": "https://12d.github.io/dist/",
-    "47abb49a6f72df43e94b11b99a630df7cdcf3284": "https://12d.github.io/dist/static/sw-entry.js"
+    "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "https://bank-static-stg.pingan.com.cn/station/site/home/static/images/dialog-downloadApp.f4999d8.jpg",
+    "f68d3e2846936050aca34228378d4ba99ca1f852": "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/app.js?daf0e559de290c290e0b",
+    "30acad38d0b042b50826e727c22cace1c4f1ffff": "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/vendor.js?a7958002a141a7b8d499",
+    "43d63e9cf639f5cb25fd5c1386f69daf9b097901": "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/manifest.js?71f9b6f0bf77cecf3cad",
+    "c36950ef62a8bf2861a76006df74068f42628bfa": "https://bank-static-stg.pingan.com.cn/station/site/home/static/css/app.css",
+    "573261887c8534a70133bbd237cc88095d3b1404": "https://bank-static-stg.pingan.com.cn/station/site/home/",
+    "7260aa6c34495c8dd63561f3e2ba72d68a41e9fd": "https://bank-static-stg.pingan.com.cn/station/site/home/static/sw-entry.js"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-6-6 10:43:03",
+  "version": "2018-6-6 13:46:54",
   "name": "webpack-offline",
   "pluginVersion": "5.0.5",
   "relativePaths": false
@@ -100,7 +100,7 @@ var __wpo = {
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "https://12d.github.io/dist/";
+/******/ 	__webpack_require__.p = "https://bank-static-stg.pingan.com.cn/station/site/home/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = "pSrt");
@@ -193,7 +193,7 @@ self.addEventListener('fetch', function (event) {
     var urlString = url.toString()
     var cacheUrl = urlString
     var IS_12D = /(12d\.github\.io)$/
-    var IS_BANK_Static =/b-stg\.pingan\.com\.cn\/station\/site\/home/
+    var IS_BANK_Static =/bank-static-stg\.pingan\.com\.cn/
     var IS_STATIC = /\/static\//
    //var IS_HOME = /^\/(e|u|n)\/(\d+)$/
     var IS_INDEX1 = /\/dist\/index./
@@ -210,7 +210,7 @@ self.addEventListener('fetch', function (event) {
       event.respondWith(resource)
     }
     // 以网络优先的形式缓存 index页面
-    if ((pathname.match(IS_12D)) && isGET) {
+    if ((cacheUrl.match(IS_12D)) && isGET) {
       resource = netWorkFirst(cacheUrl, CACHE_NAME)
       event.respondWith(resource)
     }
