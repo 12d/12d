@@ -3,7 +3,7 @@ var __wpo = {
     "main": [
       "https://bank-static-stg.pingan.com.cn/station/site/home/static/images/dialog-downloadApp.f4999d8.jpg",
       "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/app.js?daf0e559de290c290e0b",
-      "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/vendor.js?a7958002a141a7b8d499",
+      "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/vendor.js?1a46e1a88eb28672e1f0",
       "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/manifest.js?71f9b6f0bf77cecf3cad",
       "https://bank-static-stg.pingan.com.cn/station/site/home/static/css/app.css",
       "https://bank-static-stg.pingan.com.cn/station/site/home/",
@@ -27,15 +27,15 @@ var __wpo = {
   "hashesMap": {
     "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "https://bank-static-stg.pingan.com.cn/station/site/home/static/images/dialog-downloadApp.f4999d8.jpg",
     "f68d3e2846936050aca34228378d4ba99ca1f852": "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/app.js?daf0e559de290c290e0b",
-    "30acad38d0b042b50826e727c22cace1c4f1ffff": "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/vendor.js?a7958002a141a7b8d499",
+    "ee16492fa2c3b877ca6b2a2efce74bf82a2588f6": "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/vendor.js?1a46e1a88eb28672e1f0",
     "43d63e9cf639f5cb25fd5c1386f69daf9b097901": "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/manifest.js?71f9b6f0bf77cecf3cad",
     "c36950ef62a8bf2861a76006df74068f42628bfa": "https://bank-static-stg.pingan.com.cn/station/site/home/static/css/app.css",
-    "573261887c8534a70133bbd237cc88095d3b1404": "https://bank-static-stg.pingan.com.cn/station/site/home/",
+    "dfafc4321b27ba156477d416061f6761bc449010": "https://bank-static-stg.pingan.com.cn/station/site/home/",
     "7260aa6c34495c8dd63561f3e2ba72d68a41e9fd": "https://bank-static-stg.pingan.com.cn/station/site/home/static/sw-entry.js"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-6-6 13:46:54",
+  "version": "2018-6-6 13:51:53",
   "name": "webpack-offline",
   "pluginVersion": "5.0.5",
   "relativePaths": false
