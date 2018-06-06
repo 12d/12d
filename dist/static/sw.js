@@ -3,7 +3,7 @@ var __wpo = {
     "main": [
       "https://12d.github.io/dist/static/images/dialog-downloadApp.f4999d8.jpg",
       "https://12d.github.io/dist/static/js/app.js?daf0e559de290c290e0b",
-      "https://12d.github.io/dist/static/js/vendor.js?e9cc3c7114af4154aa56",
+      "https://12d.github.io/dist/static/js/vendor.js?1a46e1a88eb28672e1f0",
       "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
       "https://12d.github.io/dist/static/css/app.css",
       "https://12d.github.io/dist/",
@@ -27,15 +27,15 @@ var __wpo = {
   "hashesMap": {
     "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "https://12d.github.io/dist/static/images/dialog-downloadApp.f4999d8.jpg",
     "f68d3e2846936050aca34228378d4ba99ca1f852": "https://12d.github.io/dist/static/js/app.js?daf0e559de290c290e0b",
-    "d8e6fae8f093b72c62a56b4557a5cc7157ce6981": "https://12d.github.io/dist/static/js/vendor.js?e9cc3c7114af4154aa56",
+    "ee16492fa2c3b877ca6b2a2efce74bf82a2588f6": "https://12d.github.io/dist/static/js/vendor.js?1a46e1a88eb28672e1f0",
     "736fa9491c00b600c6f9f182223ebbb120817c0f": "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
     "b7a0f99dd78c9cc02b056d164efc09ae16e2c39d": "https://12d.github.io/dist/static/css/app.css",
-    "30d2796e1a384fe9bd3639e27ebb3f23b84d3951": "https://12d.github.io/dist/",
-    "ca4f55973b172196d9ee0d582cdc6b99de5b7691": "https://12d.github.io/dist/static/sw-entry.js"
+    "16221078ea8c91d23c813d36cc49c437388336f2": "https://12d.github.io/dist/",
+    "47abb49a6f72df43e94b11b99a630df7cdcf3284": "https://12d.github.io/dist/static/sw-entry.js"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-6-5 19:55:23",
+  "version": "2018-6-6 10:43:03",
   "name": "webpack-offline",
   "pluginVersion": "5.0.5",
   "relativePaths": false
@@ -103,7 +103,7 @@ var __wpo = {
 /******/ 	__webpack_require__.p = "https://12d.github.io/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "NEP5");
+/******/ 	return __webpack_require__(__webpack_require__.s = "pSrt");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -192,7 +192,7 @@ self.addEventListener('fetch', function (event) {
     var pathname = url.pathname
     var urlString = url.toString()
     var cacheUrl = urlString
-    var IS_12D = /12d\.github\.io/
+    var IS_12D = /(12d\.github\.io)$/
     var IS_BANK_Static =/b-stg\.pingan\.com\.cn\/station\/site\/home/
     var IS_STATIC = /\/static\//
    //var IS_HOME = /^\/(e|u|n)\/(\d+)$/
@@ -210,7 +210,7 @@ self.addEventListener('fetch', function (event) {
       event.respondWith(resource)
     }
     // 以网络优先的形式缓存 index页面
-    if ((pathname.match(IS_INDEX1)) && isGET) {
+    if ((pathname.match(IS_12D)) && isGET) {
       resource = netWorkFirst(cacheUrl, CACHE_NAME)
       event.respondWith(resource)
     }
@@ -218,7 +218,7 @@ self.addEventListener('fetch', function (event) {
 
 /***/ }),
 
-/***/ "NEP5":
+/***/ "pSrt":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -999,7 +999,9 @@ function logGroup(title, assets) {
 loaders: {},
 cacheMaps: [
       {
-      match: undefined,
+      match: function (requestUrl) {
+            return new URL('/', location);
+          },
       to: null,
       requestTypes: ["navigate"],
     }
