@@ -7,7 +7,6 @@ var __wpo = {
       "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
       "https://12d.github.io/dist/static/css/app.css",
       "https://12d.github.io/dist/",
-      "https://12d.github.io/dist/static/sw-entry-bak.js",
       "https://bank-static-stg.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
       "https://bank-static-stg.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
       "https://bank-static-stg.pingan.com.cn/app_com/pab/1.0.0/pab.js",
@@ -31,11 +30,10 @@ var __wpo = {
     "736fa9491c00b600c6f9f182223ebbb120817c0f": "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
     "b7a0f99dd78c9cc02b056d164efc09ae16e2c39d": "https://12d.github.io/dist/static/css/app.css",
     "c5f89bb743f488cac9eab6c8cf65fe2349540330": "https://12d.github.io/dist/",
-    "7260aa6c34495c8dd63561f3e2ba72d68a41e9fd": "https://12d.github.io/dist/static/sw-entry-bak.js"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-6-8 15:08:37",
+  "version": "2018-6-8 15:19:37",
   "name": "webpack-offline",
   "pluginVersion": "5.0.5",
   "relativePaths": false
