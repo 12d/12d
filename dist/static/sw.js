@@ -29,11 +29,11 @@ var __wpo = {
     "ee16492fa2c3b877ca6b2a2efce74bf82a2588f6": "https://12d.github.io/dist/static/js/vendor.js?1a46e1a88eb28672e1f0",
     "736fa9491c00b600c6f9f182223ebbb120817c0f": "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
     "b7a0f99dd78c9cc02b056d164efc09ae16e2c39d": "https://12d.github.io/dist/static/css/app.css",
-    "c5f89bb743f488cac9eab6c8cf65fe2349540330": "https://12d.github.io/dist/",
+    "c5f89bb743f488cac9eab6c8cf65fe2349540330": "https://12d.github.io/dist/"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-6-8 15:19:37",
+  "version": "2018-6-8 15:22:14",
   "name": "webpack-offline",
   "pluginVersion": "5.0.5",
   "relativePaths": false
@@ -977,7 +977,7 @@ self.addEventListener('fetch', function (event) {
   var pathname = url.pathname
   var urlString = url.toString()
   var cacheUrl = urlString
-  var IS_BANK_Static = /bank-static\.pingan\.com\.cn/
+  var IS_BANK_Static = /bank-static-stg\.pingan\.com\.cn/
   var IS_RSB = /rsb\.pingan\.com\.cn/
   var IS_STATIC = /\/static\//
   var IS_INDEX1 =/\/dist\/index./  //####
