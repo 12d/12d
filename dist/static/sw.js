@@ -1,13 +1,13 @@
 var __wpo = {
   "assets": {
     "main": [
-      "https://bank-static-stg.pingan.com.cn/station/site/home/static/images/dialog-downloadApp.f4999d8.jpg",
-      "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/app.js?a07e77b4dcf0cba7881a",
-      "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/vendor.js?1a46e1a88eb28672e1f0",
-      "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/manifest.js?71f9b6f0bf77cecf3cad",
-      "https://bank-static-stg.pingan.com.cn/station/site/home/static/css/app.css",
-      "https://bank-static-stg.pingan.com.cn/station/site/home/",
-      "https://bank-static-stg.pingan.com.cn/station/site/home/static/sw-entry-bak.js",
+      "https://12d.github.io/dist/static/images/dialog-downloadApp.f4999d8.jpg",
+      "https://12d.github.io/dist/static/js/app.js?a07e77b4dcf0cba7881a",
+      "https://12d.github.io/dist/static/js/vendor.js?1a46e1a88eb28672e1f0",
+      "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
+      "https://12d.github.io/dist/static/css/app.css",
+      "https://12d.github.io/dist/",
+      "https://12d.github.io/dist/static/sw-entry-bak.js",
       "https://bank-static-stg.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
       "https://bank-static-stg.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
       "https://bank-static-stg.pingan.com.cn/app_com/pab/1.0.0/pab.js",
@@ -25,17 +25,17 @@ var __wpo = {
     "https://bank-static-stg.pingan.com.cn/omm/mobile/assets/plugins/product.js"
   ],
   "hashesMap": {
-    "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "https://bank-static-stg.pingan.com.cn/station/site/home/static/images/dialog-downloadApp.f4999d8.jpg",
-    "f68d3e2846936050aca34228378d4ba99ca1f852": "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/app.js?a07e77b4dcf0cba7881a",
-    "ee16492fa2c3b877ca6b2a2efce74bf82a2588f6": "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/vendor.js?1a46e1a88eb28672e1f0",
-    "43d63e9cf639f5cb25fd5c1386f69daf9b097901": "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/manifest.js?71f9b6f0bf77cecf3cad",
-    "c36950ef62a8bf2861a76006df74068f42628bfa": "https://bank-static-stg.pingan.com.cn/station/site/home/static/css/app.css",
-    "1f155d604cb53bd23c2e0e6e3f9692eec9bdf44b": "https://bank-static-stg.pingan.com.cn/station/site/home/",
-    "7260aa6c34495c8dd63561f3e2ba72d68a41e9fd": "https://bank-static-stg.pingan.com.cn/station/site/home/static/sw-entry-bak.js"
+    "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "https://12d.github.io/dist/static/images/dialog-downloadApp.f4999d8.jpg",
+    "f68d3e2846936050aca34228378d4ba99ca1f852": "https://12d.github.io/dist/static/js/app.js?a07e77b4dcf0cba7881a",
+    "ee16492fa2c3b877ca6b2a2efce74bf82a2588f6": "https://12d.github.io/dist/static/js/vendor.js?1a46e1a88eb28672e1f0",
+    "736fa9491c00b600c6f9f182223ebbb120817c0f": "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
+    "b7a0f99dd78c9cc02b056d164efc09ae16e2c39d": "https://12d.github.io/dist/static/css/app.css",
+    "c5f89bb743f488cac9eab6c8cf65fe2349540330": "https://12d.github.io/dist/",
+    "7260aa6c34495c8dd63561f3e2ba72d68a41e9fd": "https://12d.github.io/dist/static/sw-entry-bak.js"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-6-8 14:57:26",
+  "version": "2018-6-8 15:08:37",
   "name": "webpack-offline",
   "pluginVersion": "5.0.5",
   "relativePaths": false
@@ -100,7 +100,7 @@ var __wpo = {
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "https://bank-static-stg.pingan.com.cn/station/site/home/";
+/******/ 	__webpack_require__.p = "https://12d.github.io/dist/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = "7us2");
