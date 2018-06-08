@@ -33,7 +33,7 @@ var __wpo = {
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-6-8 15:22:14",
+  "version": "2018-6-8 15:33:14",
   "name": "webpack-offline",
   "pluginVersion": "5.0.5",
   "relativePaths": false
@@ -992,10 +992,10 @@ self.addEventListener('fetch', function (event) {
   var resource = undefined
   var isGET = event.request.method === 'GET'
   // 以缓存优先的形式缓存 static/* 静态资源
-  if ((cacheUrl.match(IS_BANK_Static)) && isGET) {
-    resource = cacheFirst(cacheUrl, CACHE_NAME)
-    event.respondWith(resource)
-  }
+  // if ((cacheUrl.match(IS_BANK_Static)) && isGET) {
+  //   resource = cacheFirst(cacheUrl, CACHE_NAME)
+  //   event.respondWith(resource)
+  // }
   // 以网络优先的形式缓存 index页面
   // if ((pathname.match(IS_INDEX1) || pathname.match(IS_INDEX2) || pathname.match(IS_AUM) || pathname.match(IS_CREDITCARD) || pathname.match(IS_LOAN) || pathname.match(IS_MINE)) && isGET) {
   //           resource = netWorkFirst(cacheUrl, CACHE_NAME)
