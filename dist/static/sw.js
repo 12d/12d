@@ -2,12 +2,12 @@ var __wpo = {
   "assets": {
     "main": [
       "https://bank-static-stg.pingan.com.cn/station/site/home/static/images/dialog-downloadApp.f4999d8.jpg",
-      "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/app.js?daf0e559de290c290e0b",
+      "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/app.js?a07e77b4dcf0cba7881a",
       "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/vendor.js?1a46e1a88eb28672e1f0",
       "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/manifest.js?71f9b6f0bf77cecf3cad",
       "https://bank-static-stg.pingan.com.cn/station/site/home/static/css/app.css",
       "https://bank-static-stg.pingan.com.cn/station/site/home/",
-      "https://bank-static-stg.pingan.com.cn/station/site/home/static/sw-entry.js",
+      "https://bank-static-stg.pingan.com.cn/station/site/home/static/sw-entry-bak.js",
       "https://bank-static-stg.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
       "https://bank-static-stg.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
       "https://bank-static-stg.pingan.com.cn/app_com/pab/1.0.0/pab.js",
@@ -26,16 +26,16 @@ var __wpo = {
   ],
   "hashesMap": {
     "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "https://bank-static-stg.pingan.com.cn/station/site/home/static/images/dialog-downloadApp.f4999d8.jpg",
-    "f68d3e2846936050aca34228378d4ba99ca1f852": "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/app.js?daf0e559de290c290e0b",
+    "f68d3e2846936050aca34228378d4ba99ca1f852": "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/app.js?a07e77b4dcf0cba7881a",
     "ee16492fa2c3b877ca6b2a2efce74bf82a2588f6": "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/vendor.js?1a46e1a88eb28672e1f0",
     "43d63e9cf639f5cb25fd5c1386f69daf9b097901": "https://bank-static-stg.pingan.com.cn/station/site/home/static/js/manifest.js?71f9b6f0bf77cecf3cad",
     "c36950ef62a8bf2861a76006df74068f42628bfa": "https://bank-static-stg.pingan.com.cn/station/site/home/static/css/app.css",
-    "dfafc4321b27ba156477d416061f6761bc449010": "https://bank-static-stg.pingan.com.cn/station/site/home/",
-    "7260aa6c34495c8dd63561f3e2ba72d68a41e9fd": "https://bank-static-stg.pingan.com.cn/station/site/home/static/sw-entry.js"
+    "1f155d604cb53bd23c2e0e6e3f9692eec9bdf44b": "https://bank-static-stg.pingan.com.cn/station/site/home/",
+    "7260aa6c34495c8dd63561f3e2ba72d68a41e9fd": "https://bank-static-stg.pingan.com.cn/station/site/home/static/sw-entry-bak.js"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-6-6 13:51:53",
+  "version": "2018-6-8 14:57:26",
   "name": "webpack-offline",
   "pluginVersion": "5.0.5",
   "relativePaths": false
@@ -103,122 +103,12 @@ var __wpo = {
 /******/ 	__webpack_require__.p = "https://bank-static-stg.pingan.com.cn/station/site/home/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "pSrt");
+/******/ 	return __webpack_require__(__webpack_require__.s = "7us2");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "0teS":
-/***/ (function(module, exports) {
-
-
-self.addEventListener('activate', function(event) {
-
-  const CACHE_NAME = __wpo.name + ':' + __wpo.version
-
-  event.waitUntil(
-    caches.keys().then(function(cacheNames) {
-      return Promise.all(
-        cacheNames.map(function(cacheName) {
-          if (CACHE_NAME.indexOf(cacheName) === -1) {
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    })
-  );
-});
-
-self.addEventListener('fetch', function (event) {
-    function cachesMatch (request, cacheName) {
-      return caches.match(request, {
-        cacheName: cacheName
-      }).then(function (response) {
-        return response
-      })
-      // Return void if error happened (cache not found)
-      ['catch'](function () {})
-    }
-    function cacheFirst(cacheUrl, CACHE_NAME) {
-      var resource = cachesMatch(cacheUrl, CACHE_NAME).then(function (response) {
-        if (response) {
-          return response;
-        }
-        // Load and cache known assets
-        var fetching = fetch(urlString).then(function (response) {
-          if (!response.ok) {
-            return response;
-          }
-          (function () {
-            var responseClone = response.clone();
-            var storing = caches.open(CACHE_NAME).then(function (cache) {
-              return cache.put(urlString, responseClone);
-            }).then(function () {
-              console.log('[SW]:', 'Cache asset: ' + urlString);
-            });
-            event.waitUntil(storing);
-          })();
-  
-          return response;
-        });
-  
-        return fetching;
-      })
-      return resource
-    }
-    function netWorkFirst(cacheUrl, CACHE_NAME) {
-      var resource = fetch(cacheUrl).then(response => {
-        if (response.ok) {
-          var responseClone = response.clone()
-          var storing = caches.open(CACHE_NAME).then(function (cache) {
-            cache.put(cacheUrl, responseClone);
-          }).then(function () {
-            console.log('[SW]:', 'Cache asset: ' + cacheUrl);
-          });
-          event.waitUntil(storing);
-          return response;
-        }
-        // Throw to reach the code in the catch below
-        throw new Error('Response is not ok');
-      })
-      ['catch'](function () {
-        return cachesMatch(cacheUrl, CACHE_NAME);
-      });
-      return resource
-    }
-  
-    var url = new URL(event.request.url)
-    url.hash = ''
-    var pathname = url.pathname
-    var urlString = url.toString()
-    var cacheUrl = urlString
-    var IS_12D = /(12d\.github\.io)$/
-    var IS_BANK_Static =/bank-static-stg\.pingan\.com\.cn/
-    var IS_STATIC = /\/static\//
-   //var IS_HOME = /^\/(e|u|n)\/(\d+)$/
-    var IS_INDEX1 = /\/dist\/index./
-    var IS_INDEX2 = /\/home\/index./
-    //var IS_PREVIEW = /^\/preview(?!\.)/
-    var CACHE_PREFIX = __wpo.name
-    var CACHE_TAG = __wpo.version
-    var CACHE_NAME = CACHE_PREFIX + ':' + CACHE_TAG
-    var resource = undefined
-    var isGET = event.request.method === 'GET'
-    // 以缓存优先的形式缓存 static/* 静态资源
-    if ((cacheUrl.match(IS_BANK_Static)) && isGET) {
-      resource = cacheFirst(cacheUrl, CACHE_NAME)
-      event.respondWith(resource)
-    }
-    // 以网络优先的形式缓存 index页面
-    if ((cacheUrl.match(IS_12D)) && isGET) {
-      resource = netWorkFirst(cacheUrl, CACHE_NAME)
-      event.respondWith(resource)
-    }
-  })
-
-/***/ }),
-
-/***/ "pSrt":
+/***/ "7us2":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -997,19 +887,128 @@ function logGroup(title, assets) {
 }
         WebpackServiceWorker(__wpo, {
 loaders: {},
-cacheMaps: [
-      {
-      match: function (requestUrl) {
-            return new URL('/', location);
-          },
-      to: null,
-      requestTypes: ["navigate"],
-    }
-    ],
+cacheMaps: [],
 navigationPreload: false,
 });
-        module.exports = __webpack_require__("0teS")
+        module.exports = __webpack_require__("YVYc")
       
+
+/***/ }),
+
+/***/ "YVYc":
+/***/ (function(module, exports) {
+
+self.addEventListener('activate', function (event) {
+
+  const CACHE_NAME = __wpo.name + ':' + __wpo.version
+
+  event.waitUntil(
+    caches.keys().then(function (cacheNames) {
+      return Promise.all(
+        cacheNames.map(function (cacheName) {
+          if (CACHE_NAME.indexOf(cacheName) === -1) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
+});
+
+self.addEventListener('fetch', function (event) {
+  function cachesMatch(request, cacheName) {
+    return caches.match(request, {
+      cacheName: cacheName
+    }).then(function (response) {
+      return response
+    })
+    // Return void if error happened (cache not found)
+    ['catch'](function () {})
+  }
+
+  function cacheFirst(cacheUrl, CACHE_NAME) {
+    var resource = cachesMatch(cacheUrl, CACHE_NAME).then(function (response) {
+      if (response) {
+        return response;
+      }
+      // Load and cache known assets
+      var fetching = fetch(urlString).then(function (response) {
+        if (!response.ok) {
+          return response;
+        }
+        (function () {
+          var responseClone = response.clone();
+          var storing = caches.open(CACHE_NAME).then(function (cache) {
+            return cache.put(urlString, responseClone);
+          }).then(function () {
+            console.log('[SW]:', 'Cache asset: ' + urlString);
+          });
+          event.waitUntil(storing);
+        })();
+
+        return response;
+      });
+
+      return fetching;
+    })
+    return resource
+  }
+
+  function netWorkFirst(cacheUrl, CACHE_NAME) {
+    var resource = fetch(cacheUrl).then(response => {
+      if (response.ok) {
+        var responseClone = response.clone()
+        var storing = caches.open(CACHE_NAME).then(function (cache) {
+          cache.put(cacheUrl, responseClone);
+        }).then(function () {
+          console.log('[SW]:', 'Cache asset: ' + cacheUrl);
+        });
+        event.waitUntil(storing);
+        return response;
+      }
+      // Throw to reach the code in the catch below
+      throw new Error('Response is not ok');
+    })['catch'](function () {
+      return cachesMatch(cacheUrl, CACHE_NAME);
+    });
+    return resource
+  }
+
+  var url = new URL(event.request.url)
+  url.hash = ''
+  var pathname = url.pathname
+  var urlString = url.toString()
+  var cacheUrl = urlString
+  var IS_BANK_Static = /bank-static\.pingan\.com\.cn/
+  var IS_RSB = /rsb\.pingan\.com\.cn/
+  var IS_STATIC = /\/static\//
+  var IS_INDEX1 =/\/dist\/index./  //####
+  var IS_INDEX2 = /\/home\/index./
+  var IS_AUM = /\/aum\/mobile\/index./
+  var IS_CREDITCARD = /\/creditcard\/M\/index./
+  var IS_LOAN = /\/mloan\/pages\/index./
+  var IS_MINE = /\/platform\/mine\/module\/mine./
+  var CACHE_PREFIX = __wpo.name
+  var CACHE_TAG = __wpo.version
+  var CACHE_NAME = CACHE_PREFIX + ':' + CACHE_TAG
+  var resource = undefined
+  var isGET = event.request.method === 'GET'
+  // 以缓存优先的形式缓存 static/* 静态资源
+  if ((cacheUrl.match(IS_BANK_Static)) && isGET) {
+    resource = cacheFirst(cacheUrl, CACHE_NAME)
+    event.respondWith(resource)
+  }
+  // 以网络优先的形式缓存 index页面
+  // if ((pathname.match(IS_INDEX1) || pathname.match(IS_INDEX2) || pathname.match(IS_AUM) || pathname.match(IS_CREDITCARD) || pathname.match(IS_LOAN) || pathname.match(IS_MINE)) && isGET) {
+  //           resource = netWorkFirst(cacheUrl, CACHE_NAME)
+  //           event.respondWith(resource)
+  //         }
+  if ((cacheUrl.match(IS_INDEX1)|| pathname.match(IS_INDEX1)) && isGET) {
+    resource = netWorkFirst(cacheUrl, CACHE_NAME)
+    event.respondWith(resource)
+  }
+})
+
 
 /***/ })
 
