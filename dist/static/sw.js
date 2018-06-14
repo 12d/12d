@@ -1,43 +1,41 @@
 var __wpo = {
   "assets": {
     "main": [
-      "./static/images/dialog-downloadApp.f4999d8.jpg",
-      "./static/js/app.js?64273c989bea60eac7aa",
-      "./static/js/vendor.js?5ac29db8cdb632e8c0cf",
-      "./static/js/manifest.js?71f9b6f0bf77cecf3cad",
-      "./static/css/app.css",
-      "./",
-      "./static/sw-entry.js",
-      "https://bank-static-stg.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
-      "https://bank-static-stg.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
-      "https://bank-static-stg.pingan.com.cn/app_com/pab/1.0.0/pab.js",
-      "https://bank-static-stg.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
-      "https://bank-static-stg.pingan.com.cn/omm/mobile/assets/plugins/product.js"
+      "https://12d.github.io/dist/static/images/dialog-downloadApp.f4999d8.jpg",
+      "https://12d.github.io/dist/static/js/app.js?7c2e95df9aae1033d903",
+      "https://12d.github.io/dist/static/js/vendor.js?b98e9b476197cb3a67fd",
+      "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
+      "https://12d.github.io/dist/static/css/app.css",
+      "https://12d.github.io/dist/",
+      "https://b-stg.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
+      "https://b-stg.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
+      "https://b-stg.pingan.com.cn/app_com/pab/1.0.0/pab.js",
+      "https://b-stg.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
+      "https://b-stg.pingan.com.cn/omm/mobile/assets/plugins/product.js"
     ],
     "additional": [],
     "optional": []
   },
   "externals": [
-    "https://bank-static-stg.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
-    "https://bank-static-stg.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
-    "https://bank-static-stg.pingan.com.cn/app_com/pab/1.0.0/pab.js",
-    "https://bank-static-stg.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
-    "https://bank-static-stg.pingan.com.cn/omm/mobile/assets/plugins/product.js"
+    "https://b-stg.pingan.com.cn/station/site/common/mobilehome/css/bank-module-public.css",
+    "https://b-stg.pingan.com.cn/app_js/libs/zepto/1.2.0/zepto.min.js",
+    "https://b-stg.pingan.com.cn/app_com/pab/1.0.0/pab.js",
+    "https://b-stg.pingan.com.cn/station/site/common/mobilehome/js/bank-module-public.js",
+    "https://b-stg.pingan.com.cn/omm/mobile/assets/plugins/product.js"
   ],
   "hashesMap": {
-    "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "./static/images/dialog-downloadApp.f4999d8.jpg",
-    "731aeabe68629735158775ae7865a422e0917186": "./static/js/app.js?64273c989bea60eac7aa",
-    "259837b055af4de2a098c40a425b337025301bfe": "./static/js/vendor.js?5ac29db8cdb632e8c0cf",
-    "43d63e9cf639f5cb25fd5c1386f69daf9b097901": "./static/js/manifest.js?71f9b6f0bf77cecf3cad",
-    "c36950ef62a8bf2861a76006df74068f42628bfa": "./static/css/app.css",
-    "a04263793f15c67f8a639a7c965bdf25b5c0d49c": "./",
-    "05d6b1d07c51d9d298705d56dad9d3bb662abb8b": "./static/sw-entry.js"
+    "bc6edb3d5ea100b4e6eb7e18bd1055f34a814e75": "https://12d.github.io/dist/static/images/dialog-downloadApp.f4999d8.jpg",
+    "086a08c44f36e453235686aabcc4fd28197d28cc": "https://12d.github.io/dist/static/js/app.js?7c2e95df9aae1033d903",
+    "f54ffc941a42549afd7e3024f5eae4e3f1dc1900": "https://12d.github.io/dist/static/js/vendor.js?b98e9b476197cb3a67fd",
+    "736fa9491c00b600c6f9f182223ebbb120817c0f": "https://12d.github.io/dist/static/js/manifest.js?6a301dfdd76272414855",
+    "b7a0f99dd78c9cc02b056d164efc09ae16e2c39d": "https://12d.github.io/dist/static/css/app.css",
+    "1785d387dec64f01b1acd3b4300af716d00e1b5b": "https://12d.github.io/dist/"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-5-21 21:43:30",
+  "version": "2018-6-14 17:20:57",
   "name": "webpack-offline",
-  "pluginVersion": "4.9.1",
+  "pluginVersion": "5.0.5",
   "relativePaths": false
 };
 
@@ -100,124 +98,15 @@ var __wpo = {
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "https://bank-static-stg.pingan.com.cn/station/site/home/";
+/******/ 	__webpack_require__.p = "https://12d.github.io/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "r+aI");
+/******/ 	return __webpack_require__(__webpack_require__.s = "6+Ye");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "0teS":
-/***/ (function(module, exports) {
-
-
-self.addEventListener('activate', function(event) {
-
-  const CACHE_NAME = __wpo.name + ':' + __wpo.version
-
-  event.waitUntil(
-    caches.keys().then(function(cacheNames) {
-      return Promise.all(
-        cacheNames.map(function(cacheName) {
-          if (CACHE_NAME.indexOf(cacheName) === -1) {
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    })
-  );
-});
-
-self.addEventListener('fetch', function (event) {
-    function cachesMatch (request, cacheName) {
-      return caches.match(request, {
-        cacheName: cacheName
-      }).then(function (response) {
-        return response
-      })
-      // Return void if error happened (cache not found)
-      ['catch'](function () {})
-    }
-    function cacheFirst(cacheUrl, CACHE_NAME) {
-      var resource = cachesMatch(cacheUrl, CACHE_NAME).then(function (response) {
-        if (response) {
-          return response;
-        }
-        // Load and cache known assets
-        var fetching = fetch(urlString).then(function (response) {
-          if (!response.ok) {
-            return response;
-          }
-          (function () {
-            var responseClone = response.clone();
-            var storing = caches.open(CACHE_NAME).then(function (cache) {
-              return cache.put(urlString, responseClone);
-            }).then(function () {
-              console.log('[SW]:', 'Cache asset: ' + urlString);
-            });
-            event.waitUntil(storing);
-          })();
-  
-          return response;
-        });
-  
-        return fetching;
-      })
-      return resource
-    }
-    function netWorkFirst(cacheUrl, CACHE_NAME) {
-      var resource = fetch(cacheUrl).then(response => {
-        if (response.ok) {
-          var responseClone = response.clone()
-          var storing = caches.open(CACHE_NAME).then(function (cache) {
-            cache.put(cacheUrl, responseClone);
-          }).then(function () {
-            console.log('[SW]:', 'Cache asset: ' + cacheUrl);
-          });
-          event.waitUntil(storing);
-          return response;
-        }
-        // Throw to reach the code in the catch below
-        throw new Error('Response is not ok');
-      })
-      ['catch'](function () {
-        return cachesMatch(cacheUrl, CACHE_NAME);
-      });
-      return resource
-    }
-  
-    var url = new URL(event.request.url)
-    url.hash = ''
-    var pathname = url.pathname
-    var urlString = url.toString()
-    var cacheUrl = urlString
-    var IS_12D = /12d\.github\.io/
-    var IS_BANK_Static =/bank-static\.pingan\.com\.cn/
-    var IS_STATIC = /\/static\//
-   //var IS_HOME = /^\/(e|u|n)\/(\d+)$/
-    var IS_INDEX = /\/home\/index./
-    //var IS_PREVIEW = /^\/preview(?!\.)/
-    var CACHE_PREFIX = __wpo.name
-    var CACHE_TAG = __wpo.version
-    var CACHE_NAME = CACHE_PREFIX + ':' + CACHE_TAG
-    var resource = undefined
-    var isGET = event.request.method === 'GET'
-    // 以缓存优先的形式缓存 static/* 静态资源
-    if ((cacheUrl.match(IS_BANK_Static)) && isGET) {
-      resource = cacheFirst(cacheUrl, CACHE_NAME)
-      event.respondWith(resource)
-    }
-    // 以网络优先的形式缓存 index页面
-    if ((pathname.match(IS_INDEX)) && isGET) {
-      resource = netWorkFirst(cacheUrl, CACHE_NAME)
-      event.respondWith(resource)
-    }
-  })
-
-/***/ }),
-
-/***/ "r+aI":
+/***/ "6+Ye":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -270,7 +159,6 @@ if (typeof DEBUG === 'undefined') {
 }
 
 function WebpackServiceWorker(params, helpers) {
-  var loaders = helpers.loaders;
   var cacheMaps = helpers.cacheMaps;
   // navigationPreload: true, { map: (URL) => URL, test: (URL) => boolean }
   var navigationPreload = helpers.navigationPreload;
@@ -281,10 +169,14 @@ function WebpackServiceWorker(params, helpers) {
   var responseStrategy = params.responseStrategy;
 
   var assets = params.assets;
-  var loadersMap = params.loaders || {};
 
   var hashesMap = params.hashesMap;
   var externals = params.externals;
+
+  var prefetchRequest = params.prefetchRequest || {
+    credentials: 'same-origin',
+    mode: 'cors'
+  };
 
   var CACHE_PREFIX = params.name;
   var CACHE_TAG = params.version;
@@ -296,11 +188,6 @@ function WebpackServiceWorker(params, helpers) {
   mapAssets();
 
   var allAssets = [].concat(assets.main, assets.additional, assets.optional);
-
-  // Deprecated {
-  var navigateFallbackURL = params.navigateFallbackURL;
-  var navigateFallbackForRedirects = params.navigateFallbackForRedirects;
-  // }
 
   self.addEventListener('install', function (event) {
     console.log('[SW]:', 'Install event');
@@ -367,7 +254,8 @@ function WebpackServiceWorker(params, helpers) {
     return caches.open(CACHE_NAME).then(function (cache) {
       return addAllNormalized(cache, batch, {
         bust: params.version,
-        request: params.prefetchRequest
+        request: prefetchRequest,
+        failAll: section === 'main'
       });
     }).then(function () {
       logGroup('Cached assets: ' + section, batch);
@@ -449,7 +337,9 @@ function WebpackServiceWorker(params, helpers) {
 
         return Promise.all([move, addAllNormalized(cache, changed, {
           bust: params.version,
-          request: params.prefetchRequest
+          request: prefetchRequest,
+          failAll: section === 'main',
+          deleteFirst: section !== 'main'
         })]);
       });
     });
@@ -508,6 +398,11 @@ function WebpackServiceWorker(params, helpers) {
   }
 
   self.addEventListener('fetch', function (event) {
+    // Handle only GET requests
+    if (event.request.method !== 'GET') {
+      return;
+    }
+
     var url = new URL(event.request.url);
     url.hash = '';
 
@@ -520,8 +415,6 @@ function WebpackServiceWorker(params, helpers) {
       urlString = url.toString();
     }
 
-    // Handle only GET requests
-    var isGET = event.request.method === 'GET';
     var assetMatches = allAssets.indexOf(urlString) !== -1;
     var cacheUrl = urlString;
 
@@ -534,22 +427,18 @@ function WebpackServiceWorker(params, helpers) {
       }
     }
 
-    if (!assetMatches && isGET) {
-      // If isn't a cached asset and is a navigation request,
-      // perform network request and fallback to navigateFallbackURL if available.
-      //
-      // Requesting with fetchWithPreload().
-      // Preload is used only if navigationPreload is enabled and
-      // navigationPreload mapping is not used.
-      if (navigateFallbackURL && isNavigateRequest(event.request)) {
-        event.respondWith(handleNavigateFallback(fetchWithPreload(event)));
-
-        return;
-      }
-
-      if (navigationPreload === true) {
-        event.respondWith(fetchWithPreload(event));
-        return;
+    if (!assetMatches) {
+      // Use request.mode === 'navigate' instead of isNavigateRequest
+      // because everything what supports navigationPreload supports
+      // 'navigate' request.mode
+      if (event.request.mode === 'navigate') {
+        // Requesting with fetchWithPreload().
+        // Preload is used only if navigationPreload is enabled and
+        // navigationPreload mapping is not used.
+        if (navigationPreload === true) {
+          event.respondWith(fetchWithPreload(event));
+          return;
+        }
       }
 
       // Something else, positive, but not `true`
@@ -562,22 +451,11 @@ function WebpackServiceWorker(params, helpers) {
         }
       }
 
-      // Logic exists here if no cache match, or no preload
-      return;
-    }
-
-    if (!assetMatches || !isGET) {
-      // Fix for https://twitter.com/wanderview/status/696819243262873600
-      if (url.origin !== location.origin && navigator.userAgent.indexOf('Firefox/44.') !== -1) {
-        event.respondWith(fetch(event.request));
-      }
-
       // Logic exists here if no cache match
       return;
     }
 
     // Cache handling/storing/fetching starts here
-
     var resource = undefined;
 
     if (responseStrategy === 'network-first') {
@@ -588,10 +466,6 @@ function WebpackServiceWorker(params, helpers) {
     else {
         resource = cacheFirstResponse(event, urlString, cacheUrl);
       }
-
-    if (navigateFallbackURL && isNavigateRequest(event.request)) {
-      resource = handleNavigateFallback(resource);
-    }
 
     event.respondWith(resource);
   });
@@ -665,16 +539,28 @@ function WebpackServiceWorker(params, helpers) {
       }
 
       // Throw to reach the code in the catch below
-      throw new Error('Response is not ok');
+      throw response;
     })
     // This needs to be in a catch() and not just in the then() above
     // cause if your network is down, the fetch() will throw
-    ['catch'](function () {
+    ['catch'](function (erroredResponse) {
       if (DEBUG) {
         console.log('[SW]:', 'URL [' + urlString + '] from cache if possible');
       }
 
-      return cachesMatch(cacheUrl, CACHE_NAME);
+      return cachesMatch(cacheUrl, CACHE_NAME).then(function (response) {
+        if (response) {
+          return response;
+        }
+
+        if (erroredResponse instanceof Response) {
+          return erroredResponse;
+        }
+
+        // Not a response at this point, some other error
+        throw erroredResponse;
+        // return Response.error();
+      });
     });
   }
 
@@ -788,40 +674,9 @@ function WebpackServiceWorker(params, helpers) {
     });
   }
 
-  function handleNavigateFallback(fetching) {
-    return fetching['catch'](function () {}).then(function (response) {
-      var isOk = response && response.ok;
-      var isRedirect = response && response.type === 'opaqueredirect';
-
-      if (isOk || isRedirect && !navigateFallbackForRedirects) {
-        return response;
-      }
-
-      if (DEBUG) {
-        console.log('[SW]:', 'Loading navigation fallback [' + navigateFallbackURL + '] from cache');
-      }
-
-      return cachesMatch(navigateFallbackURL, CACHE_NAME);
-    });
-  }
-
   function mapAssets() {
     Object.keys(assets).forEach(function (key) {
       assets[key] = assets[key].map(function (path) {
-        var url = new URL(path, location);
-
-        url.hash = '';
-
-        if (externals.indexOf(path) === -1) {
-          url.search = '';
-        }
-
-        return url.toString();
-      });
-    });
-
-    Object.keys(loadersMap).forEach(function (key) {
-      loadersMap[key] = loadersMap[key].map(function (path) {
         var url = new URL(path, location);
 
         url.hash = '';
@@ -852,73 +707,58 @@ function WebpackServiceWorker(params, helpers) {
   }
 
   function addAllNormalized(cache, requests, options) {
-    var allowLoaders = options.allowLoaders !== false;
-    var bustValue = options && options.bust;
+    var bustValue = options.bust;
+    var failAll = options.failAll !== false;
+    var deleteFirst = options.deleteFirst === true;
     var requestInit = options.request || {
       credentials: 'omit',
       mode: 'cors'
     };
+
+    var deleting = Promise.resolve();
+
+    if (deleteFirst) {
+      deleting = Promise.all(requests.map(function (request) {
+        return cache['delete'](request)['catch'](function () {});
+      }));
+    }
 
     return Promise.all(requests.map(function (request) {
       if (bustValue) {
         request = applyCacheBust(request, bustValue);
       }
 
-      return fetch(request, requestInit).then(fixRedirectedResponse);
+      return fetch(request, requestInit).then(fixRedirectedResponse).then(function (response) {
+        if (!response.ok) {
+          return { error: true };
+        }
+
+        return { response: response };
+      }, function () {
+        return { error: true };
+      });
     })).then(function (responses) {
-      if (responses.some(function (response) {
-        return !response.ok;
+      if (failAll && responses.some(function (data) {
+        return data.error;
       })) {
         return Promise.reject(new Error('Wrong response status'));
       }
 
-      var extracted = [];
-      var addAll = responses.map(function (response, i) {
-        if (allowLoaders) {
-          extracted.push(extractAssetsWithLoaders(requests[i], response));
-        }
+      if (!failAll) {
+        responses = responses.filter(function (data) {
+          return !data.error;
+        });
+      }
 
-        return cache.put(requests[i], response);
+      return deleting.then(function () {
+        var addAll = responses.map(function (_ref, i) {
+          var response = _ref.response;
+
+          return cache.put(requests[i], response);
+        });
+
+        return Promise.all(addAll);
       });
-
-      if (extracted.length) {
-        (function () {
-          var newOptions = copyObject(options);
-          newOptions.allowLoaders = false;
-
-          var waitAll = addAll;
-
-          addAll = Promise.all(extracted).then(function (all) {
-            var extractedRequests = [].concat.apply([], all);
-
-            if (requests.length) {
-              waitAll = waitAll.concat(addAllNormalized(cache, extractedRequests, newOptions));
-            }
-
-            return Promise.all(waitAll);
-          });
-        })();
-      } else {
-        addAll = Promise.all(addAll);
-      }
-
-      return addAll;
-    });
-  }
-
-  function extractAssetsWithLoaders(request, response) {
-    var all = Object.keys(loadersMap).map(function (key) {
-      var loader = loadersMap[key];
-
-      if (loader.indexOf(request) !== -1 && loaders[key]) {
-        return loaders[key](response.clone());
-      }
-    }).filter(function (a) {
-      return !!a;
-    });
-
-    return Promise.all(all).then(function (all) {
-      return [].concat.apply([], all);
     });
   }
 
@@ -1040,8 +880,125 @@ loaders: {},
 cacheMaps: [],
 navigationPreload: false,
 });
-        module.exports = __webpack_require__("0teS")
+        module.exports = __webpack_require__("rHua")
       
+
+/***/ }),
+
+/***/ "rHua":
+/***/ (function(module, exports) {
+
+self.addEventListener('activate', function (event) {
+
+  const CACHE_NAME = __wpo.name + ':' + __wpo.version
+
+  event.waitUntil(
+    caches.keys().then(function (cacheNames) {
+      return Promise.all(
+        cacheNames.map(function (cacheName) {
+          if (CACHE_NAME.indexOf(cacheName) === -1) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
+});
+
+self.addEventListener('fetch', function (event) {
+  function cachesMatch(request, cacheName) {
+    return caches.match(request, {
+      cacheName: cacheName
+    }).then(function (response) {
+      return response
+    })
+    // Return void if error happened (cache not found)
+    ['catch'](function () {})
+  }
+
+  function cacheFirst(cacheUrl, CACHE_NAME) {
+    var resource = cachesMatch(cacheUrl, CACHE_NAME).then(function (response) {
+      if (response) {
+        return response;
+      }
+      // Load and cache known assets
+      var fetching = fetch(urlString).then(function (response) {
+        if (!response.ok) {
+          return response;
+        }
+        (function () {
+          var responseClone = response.clone();
+          var storing = caches.open(CACHE_NAME).then(function (cache) {
+            return cache.put(urlString, responseClone);
+          }).then(function () {
+            console.log('[SW]:', 'Cache asset: ' + urlString);
+          });
+          event.waitUntil(storing);
+        })();
+
+        return response;
+      });
+
+      return fetching;
+    })
+    return resource
+  }
+
+  function netWorkFirst(cacheUrl, CACHE_NAME) {
+    var resource = fetch(cacheUrl).then(response => {
+      if (response.ok) {
+        var responseClone = response.clone()
+        var storing = caches.open(CACHE_NAME).then(function (cache) {
+          cache.put(cacheUrl, responseClone);
+        }).then(function () {
+          console.log('[SW]:', 'Cache asset: ' + cacheUrl);
+        });
+        event.waitUntil(storing);
+        return response;
+      }
+      // Throw to reach the code in the catch below
+      throw new Error('Response is not ok');
+    })['catch'](function () {
+      return cachesMatch(cacheUrl, CACHE_NAME);
+    });
+    return resource
+  }
+
+  var url = new URL(event.request.url)
+  url.hash = ''
+  var pathname = url.pathname
+  var urlString = url.toString()
+  var cacheUrl = urlString
+  var IS_BANK_Static = /bank-static\.pingan\.com\.cn/
+  var IS_RSB = /rsb\.pingan\.com\.cn/
+  var IS_STATIC = /\/static\//
+  var IS_INDEX1 =/\/dist\/index./  //####
+  var IS_INDEX2 = /\/home\/index./
+  var IS_AUM = /\/aum\/mobile\/index./
+  var IS_CREDITCARD = /\/creditcard\/M\/index./
+  var IS_LOAN = /\/mloan\/pages\/index./
+  var IS_MINE = /\/platform\/mine\/module\/mine./
+  var CACHE_PREFIX = __wpo.name
+  var CACHE_TAG = __wpo.version
+  var CACHE_NAME = CACHE_PREFIX + ':' + CACHE_TAG
+  var resource = undefined
+  var isGET = event.request.method === 'GET'
+  // 以缓存优先的形式缓存 static/* 静态资源
+  // if ((cacheUrl.match(IS_BANK_Static)) && isGET) {
+  //   resource = cacheFirst(cacheUrl, CACHE_NAME)
+  //   event.respondWith(resource)
+  // }
+  // 以网络优先的形式缓存 index页面
+  // if ((pathname.match(IS_INDEX1) || pathname.match(IS_INDEX2) || pathname.match(IS_AUM) || pathname.match(IS_CREDITCARD) || pathname.match(IS_LOAN) || pathname.match(IS_MINE)) && isGET) {
+  //           resource = netWorkFirst(cacheUrl, CACHE_NAME)
+  //           event.respondWith(resource)
+  //         }
+  if ((cacheUrl.match(IS_INDEX1)|| pathname.match(IS_INDEX1)) && isGET) {
+    resource = netWorkFirst(cacheUrl, CACHE_NAME)
+    event.respondWith(resource)
+  }
+})
+
 
 /***/ })
 
